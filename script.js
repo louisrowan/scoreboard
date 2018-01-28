@@ -56,6 +56,5 @@ internals.parse = (data) => {
             }
         })
     }
-    console.log('res?', res);
     return res;
 }
