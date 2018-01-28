@@ -1,25 +1,61 @@
 const http = require('http');
 
+const internals = {};
+
 exports.parseGameId = (id) => {
 
-    http.get(`http://stats.api.si.com/v1/nba/game_detail?id=${id}&league=nba&box_score=true`, (res) => {
+    return new Promise((resolve, reject) => {
 
-        let raw = ''
-        res.on('data', (chunk) => {
+        http.get(`http://stats.api.si.com/v1/nba/game_detail?id=${id}&league=nba&box_score=true`, (res) => {
 
-            raw += chunk;
-        })
+            let raw = ''
+            res.on('data', (chunk) => {
 
-        res.on('end', (e) => {
+                raw += chunk;
+            })
 
-            const result = JSON.parse(raw);
-            console.log(result);
-        })
+            res.on('end', (e) => {
 
-        res.on('error', (e) => {
+                const result = JSON.parse(raw);
+                resolve(internals.parse(result.data))
+            })
 
-            console.log('err', e);
-        })
-    });
+            res.on('error', (e) => {
+
+                console.log('err', e);
+                reject(e);
+            })
+        });
+    })
 }
 
+internals.parse = (data) => {
+
+    const res = {
+        start: data.start.utc,
+        tvStations: data.tv_stations.map((s) => s.name),
+        venue: {
+            name: data.venue.name,
+            city: data.venue.city,
+            state: data.venue.state.name
+        },
+        teams: data.teams.map((team) => {
+
+            return {
+                name: team.title,
+                logo: team.logo.base,
+                color1: team.color.primary,
+                color2: team.color.secondary,
+                record: {
+                    wins: team.record.wins,
+                    losses: team.record.losses,
+                    winPercent: team.record.percentage
+                },
+                score: team.score,
+                isWinner: team.is_winner
+            }
+        })
+    }
+    console.log('res?', res);
+    return res;
+}
