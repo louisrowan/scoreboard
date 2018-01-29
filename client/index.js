@@ -3,7 +3,6 @@
 const React = require('react');
 const Axios = require('axios');
 const ReactDOM = require('react-dom')
-const GetGames = require('../getAllGames');
 
 const App = () => {
 

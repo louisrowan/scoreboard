@@ -1,13 +1,13 @@
 const express = require('express');
 const path = require('path');
 const port = 8080;
-const api = require('./api')
+const routes = require('./routes')
 const app = express();
 
 app.use(express.static(__dirname + '/../dist'));
 
 // route backend
-app.get('/api', api);
+app.get('/api', routes.getAllGamesRoute);
 
 // route frontend
 app.get('/', (req, res) => {
