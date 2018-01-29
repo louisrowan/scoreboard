@@ -33,6 +33,39 @@ exports.parseGameId = (id) => {
 
 internals.parse = (data) => {
 
+    getPlayerStats = (playerArray) => {
+
+        const formattedPlayers = playerArray.map((p) => {
+
+            const player = {};
+            player.name = p.player.name.first + ' ' + p.player.name.last,
+            player.number = p.player.uniform,
+            player.image = p.player.image.base + p.player.slug,
+            player.points = p.player.points
+            player.offensiveRebounds = p.player.rebounds.offensive,
+            player.defensiveRebounds = p.player.rebounds.defensive,
+            player.totalRebounds = p.player.rebounds.total,
+            player.assists = p.player.assists,
+            player.steals = p.player.steals,
+            player.blocks = p.player.blocked_shots,
+            player.turnovers = p.player.turnovers,
+            player.fouls = p.player.personal_fouls
+            player.fgAttemped = p.player.field_goals.attempted,
+            player.fgMade = p.player.field_goals.made,
+            player.fgPercentage = p.player.field_goals.percentage,
+            player.ftAttempted = p.player.free_throws.attempted,
+            player.ftMade = p.player.free_throws.made,
+            player.ftPercentage = p.player.free_throws.percentage,
+            player.threePtAttempted = p.player.three_point_field_goals.attempted,
+            player.threePtMade = p.player.three_point_field_goals.made,
+            player.threePtPercentage = p.player.three_point_field_goals.percentage
+            player.minutes = p.player.minutes_played
+            player.plusMinus = p.player.plus_minus
+        });
+
+        return formattedPlayers;
+    };
+
     const res = {
         id: data.id,
         start: data.start.utc,
@@ -48,6 +81,8 @@ internals.parse = (data) => {
         },
         teams: data.teams.map((team) => {
 
+            const stats = data.box_scores.find((b) => b.team_id === team.id);
+
             return {
                 name: team.title,
                 logo: team.logo.base,
@@ -59,26 +94,26 @@ internals.parse = (data) => {
                     winPercent: team.record.percentage
                 },
                 score: team.score,
-                isWinner: team.is_winner
-            }
-        }),
-        stats: data.box_scores.map((box) => {
-
-            return {
+                isWinner: team.is_winner,
                 teamStats: {
-                    points: box.team_stats.points,
-                    fgAttempts: box.team_stats.field_goals.attempted,
-                    fgMade: box.team_stats.field_goals.made,
-                    offensiveRebounds: box.team_stats.rebounds.offensive,
-                    defensiveRebounds: box.team_stats.rebounds.defensive,
-                    totalRebounds: box.team_stats.rebounds.total,
-                    ftMade: box.team_stats.free_throws.made,
-                    ftAttempted: box.team_stats.free_throws.attempted,
-                    ftPercent: box.team_stats.free_throws.percentage,
-                    threePtMade: box.team_stats.three_point_field_goals.made,
-                    threePtAttempted: box.team_stats.three_point_field_goals.attempted,
-                    threePtPercent: box.team_stats.three_point_field_goals.percentage,
-                }
+                    points: stats.team_stats.points,
+                    fgAttempts: stats.team_stats.field_goals.attempted,
+                    fgMade: stats.team_stats.field_goals.made,
+                    offensiveRebounds: stats.team_stats.rebounds.offensive,
+                    defensiveRebounds: stats.team_stats.rebounds.defensive,
+                    totalRebounds: stats.team_stats.rebounds.total,
+                    ftMade: stats.team_stats.free_throws.made,
+                    ftAttempted: stats.team_stats.free_throws.attempted,
+                    ftPercent: stats.team_stats.free_throws.percentage,
+                    threePtMade: stats.team_stats.three_point_field_goals.made,
+                    threePtAttempted: stats.team_stats.three_point_field_goals.attempted,
+                    threePtPercent: stats.team_stats.three_point_field_goals.percentage,
+                    assists: stats.team_stats.assists,
+                    steals: stats.team_stats.steals,
+                    blocks: stats.team_stats.blocked_shots
+                    turnovers: stats.team_stats.turnovers.total
+                },
+                playerStats: getPlayerStats(stats.playerstats)
             }
         })
     }
