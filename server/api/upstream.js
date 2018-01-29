@@ -34,12 +34,17 @@ exports.parseGameId = (id) => {
 internals.parse = (data) => {
 
     const res = {
+        id: data.id,
         start: data.start.utc,
         tvStations: data.tv_stations.map((s) => s.name),
         venue: {
             name: data.venue.name,
             city: data.venue.city,
             state: data.venue.state.name
+        },
+        status: {
+            isActive: data.status.is_active,
+            period: data.status.name
         },
         teams: data.teams.map((team) => {
 
@@ -55,6 +60,25 @@ internals.parse = (data) => {
                 },
                 score: team.score,
                 isWinner: team.is_winner
+            }
+        }),
+        stats: data.box_scores.map((box) => {
+
+            return {
+                teamStats: {
+                    points: box.team_stats.points,
+                    fgAttempts: box.team_stats.field_goals.attempted,
+                    fgMade: box.team_stats.field_goals.made,
+                    offensiveRebounds: box.team_stats.rebounds.offensive,
+                    defensiveRebounds: box.team_stats.rebounds.defensive,
+                    totalRebounds: box.team_stats.rebounds.total,
+                    ftMade: box.team_stats.free_throws.made,
+                    ftAttempted: box.team_stats.free_throws.attempted,
+                    ftPercent: box.team_stats.free_throws.percentage,
+                    threePtMade: box.team_stats.three_point_field_goals.made,
+                    threePtAttempted: box.team_stats.three_point_field_goals.attempted,
+                    threePtPercent: box.team_stats.three_point_field_goals.percentage,
+                }
             }
         })
     }
