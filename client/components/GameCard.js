@@ -14,6 +14,8 @@ class GameCard extends React.Component {
 
         const { game, sendClickToParent, activeGame } = this.props;
 
+        console.log(JSON.stringify(game.teams[0], null, 2));
+
         let content;
         if (activeGame) {
             content =
@@ -21,6 +23,7 @@ class GameCard extends React.Component {
                 <h1>active game</h1>
                 <p>{game.teams[0].name}: {game.teams[0].score}</p>
                 <p>{game.teams[1].name}: {game.teams[1].score}</p>
+                <pre>{ JSON.stringify(game.teams[0], null, 2) }</pre>
             </span>)
         }
         else {

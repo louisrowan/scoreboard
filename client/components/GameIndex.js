@@ -34,8 +34,6 @@ class GameIndex extends React.Component {
 
     handleChildClick (id) {
 
-        console.log('in handle', this);
-
         if (this.state.activeGame === id) {
             this.setState({ activeGame: null })
         }

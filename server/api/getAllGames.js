@@ -44,7 +44,8 @@ module.exports = (cb) => {
     const date = new Date();
     const year = date.getFullYear().toString();
     const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    const day = date.getDate().toString().padStart(2, '0');
+    // const day = date.getDate().toString().padStart(2, '0');
+    const day = '28'
     const formattedDate = `${year}-${month}-${day}`
 
     const url = `http://stats.api.si.com/v1/all_sports/calendar?start_date=${formattedDate}&end_date=${formattedDate}`;

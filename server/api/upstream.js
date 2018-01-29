@@ -33,34 +33,40 @@ exports.parseGameId = (id) => {
 
 internals.parse = (data) => {
 
-    getPlayerStats = (playerArray) => {
+    const getPlayerStats = (playerArray) => {
 
         const formattedPlayers = playerArray.map((p) => {
 
             const player = {};
-            player.name = p.player.name.first + ' ' + p.player.name.last,
-            player.number = p.player.uniform,
-            player.image = p.player.image.base + p.player.slug,
-            player.points = p.player.points
-            player.offensiveRebounds = p.player.rebounds.offensive,
-            player.defensiveRebounds = p.player.rebounds.defensive,
-            player.totalRebounds = p.player.rebounds.total,
-            player.assists = p.player.assists,
-            player.steals = p.player.steals,
-            player.blocks = p.player.blocked_shots,
-            player.turnovers = p.player.turnovers,
-            player.fouls = p.player.personal_fouls
-            player.fgAttemped = p.player.field_goals.attempted,
-            player.fgMade = p.player.field_goals.made,
-            player.fgPercentage = p.player.field_goals.percentage,
-            player.ftAttempted = p.player.free_throws.attempted,
-            player.ftMade = p.player.free_throws.made,
-            player.ftPercentage = p.player.free_throws.percentage,
-            player.threePtAttempted = p.player.three_point_field_goals.attempted,
-            player.threePtMade = p.player.three_point_field_goals.made,
-            player.threePtPercentage = p.player.three_point_field_goals.percentage
-            player.minutes = p.player.minutes_played
-            player.plusMinus = p.player.plus_minus
+            player.name = p.player.name.first + ' ' + p.player.name.last;
+            player.number = p.player.uniform;
+            player.image = p.player.image.base + p.player.slug;
+            player.points = p.points;
+            player.assists = p.assists;
+            player.steals = p.steals;
+            player.blocks = p.blocked_shots;
+            player.turnovers = p.turnovers;
+            player.fouls = p.personal_fouls;
+            player.minutes = p.minutes_played;
+            player.plusMinus = p.plus_minus;
+
+            player.offensiveRebounds = p.rebounds.offensive;
+            player.defensiveRebounds = p.rebounds.defensive;
+            player.totalRebounds = p.rebounds.total;
+
+            player.fgAttemped = p.field_goals.attempted;
+            player.fgMade = p.field_goals.made;
+            player.fgPercentage = p.field_goals.percentage;
+
+            player.ftAttempted = p.free_throws.attempted;
+            player.ftMade = p.free_throws.made;
+            player.ftPercentage = p.free_throws.percentage;
+
+            player.threePtAttempted = p.three_point_field_goals.attempted;
+            player.threePtMade = p.three_point_field_goals.made;
+            player.threePtPercentage = p.three_point_field_goals.percentage;
+
+            return player;
         });
 
         return formattedPlayers;
@@ -81,7 +87,10 @@ internals.parse = (data) => {
         },
         teams: data.teams.map((team) => {
 
-            const stats = data.box_scores.find((b) => b.team_id === team.id);
+            const stats = data.box_scores.find((b) => {
+
+                return b.team_id === team.id
+            });
 
             return {
                 name: team.title,
@@ -110,7 +119,7 @@ internals.parse = (data) => {
                     threePtPercent: stats.team_stats.three_point_field_goals.percentage,
                     assists: stats.team_stats.assists,
                     steals: stats.team_stats.steals,
-                    blocks: stats.team_stats.blocked_shots
+                    blocks: stats.team_stats.blocked_shots,
                     turnovers: stats.team_stats.turnovers.total
                 },
                 playerStats: getPlayerStats(stats.playerstats)
