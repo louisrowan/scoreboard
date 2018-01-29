@@ -1,4 +1,7 @@
+'use strict';
+
 const React = require('react');
+const Axios = require('axios');
 const ReactDOM = require('react-dom')
 const GetGames = require('../getAllGames');
 
@@ -21,10 +24,22 @@ class DoStuff extends React.Component {
 
     componentWillMount () {
 
-        GetGames.getAllGames((err, data) => {
+        Axios.get('/api')
+            .then((res) => {
 
-            this.setState({ games: data });
-        })
+                const data = res.data;
+
+                this.setState({ games: data })
+            })
+            .catch((err) => {
+
+                console.log('err?', err);
+            })
+
+        // GetGames.getAllGames((err, data) => {
+
+        //     this.setState({ games: data });
+        // })
     };
 
     render () {
