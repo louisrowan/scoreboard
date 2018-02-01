@@ -2,7 +2,7 @@
 
 const React = require('react');
 const Axios = require('axios');
-const GameCard = require('./GameCard');
+const GameCardContainer = require('./GameCardContainer');
 
 
 class GameIndex extends React.Component {
@@ -48,7 +48,7 @@ class GameIndex extends React.Component {
 
         const content = games.map((game) => {
 
-            return <GameCard key={game.id} game={game} sendClickToParent={this.handleChildClick} activeGame={game.id === activeGame}/>;
+            return <GameCardContainer key={game.id} game={game} sendClickToParent={this.handleChildClick} activeGame={game.id === activeGame}/>;
         });
 
         return (

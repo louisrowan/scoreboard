@@ -1,0 +1,52 @@
+- formatting 'active game'
+
+_____________
+stage 1: inactive
+show team name, logo, game status, top performer
+-
+components:
+- 'basic': team names, scores, game status, logo
+- 'top performer' - top player line
+
+_______________
+stage 2: active
+basic team stats, top couple performers
+-
+components:
+- 'basic'
+- 'basic team'
+- 'top performer' - multiple
+
+________________
+stage 3: team stats
+all team stats
+-
+components:
+- 'basic'
+- 'full team'
+
+_________________
+stage 4: player stats
+all player stats
+-
+components:
+- 'basic'
+- 'full player'
+
+
+1. 'basic'
+2. top performer
+3. basic team
+4. full team
+5. full player
+
+
+if screen is wide enough, layout should be side by side
+
+
+if too narrow, only show one at a time and with a tab on top to toggle
+
+
+components:
+
+'basic'
