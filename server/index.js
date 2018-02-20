@@ -1,12 +1,13 @@
 const express = require('express');
 const path = require('path');
 const port = 8080;
-const routes = require('./routes')
+const ApiRoutes = require('./api/routes')
 const app = express();
 
 app.use(express.static(__dirname + '/../dist'));
 
-app.get('/api', routes.getAllGamesRoute);
+app.use('/api', ApiRoutes)
+
 
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../dist/index.html'))
