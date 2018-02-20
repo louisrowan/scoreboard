@@ -1,4 +1,4 @@
-'use sTable.Rowict';
+'use strict';
 
 const React = require('react');
 const { Table } = require('semantic-ui-react');
