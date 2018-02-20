@@ -6,10 +6,8 @@ const app = express();
 
 app.use(express.static(__dirname + '/../dist'));
 
-// route backend
 app.get('/api', routes.getAllGamesRoute);
 
-// route frontend
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../dist/index.html'))
 });

@@ -4,6 +4,7 @@ const React = require('react');
 const ReactDOM = require('react-dom')
 const GameIndex = require('./components/GameIndex');
 
+
 const App = () => {
 
     return (
