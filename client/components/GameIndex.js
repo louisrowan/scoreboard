@@ -23,29 +23,29 @@ class GameIndex extends React.Component {
 
     componentWillMount () {
 
-        Axios.get('/api/gameids?date=today')
-        .then((res) => {
+        const url = '/api/gameids?date=today';
+        Axios.get(url)
+            .then((res) => {
 
-            if (res.stats === 200) {
+                if (res.status != 200) {
+                    console.warn('bad response from GET', url, res);
+                    return;
+                }
 
                 const data = res.data;
-                this.setState({ leagues: data })
-            }
 
-            const data = res.data;
+                const leagues = {};
+                Object.keys(data).map((index) => {
 
-            const leagues = {};
-            Object.keys(data).map((index) => {
+                    const league = data[index];
+                    leagues[league.league] = league.games;
+                });
+                this.setState({ leagues });
+            })
+            .catch((err) => {
 
-                const league = data[index];
-                leagues[league.league] = league.games;
+                console.log('err?', err);
             });
-            this.setState({ leagues });
-        })
-        .catch((err) => {
-
-            console.log('err?', err);
-        });
     };
 
     handleChildClick (id) {
@@ -67,21 +67,22 @@ class GameIndex extends React.Component {
 
         const { activeGame, leagues, activeLeague } = this.state
 
-        console.log('active league', activeLeague);
-
-        // const content = games.map((game) => {
-
-        //     return <GameCardContainer key={game.id} game={game} sendClickToParent={this.handleChildClick} activeGame={game.id === activeGame}/>;
-        // });
-
         const header = leagues ? Object.keys(leagues).map((league) => {
 
-            return <Button key={league} onClick={() => this.handleLeagueClick(league)}>{league}</Button>
+            return <Button
+                        key={league}
+                        onClick={() => this.handleLeagueClick(league)}>
+                        {league}
+                        </Button>
         }) : '';
 
         const games = activeLeague ? <ul>{leagues[activeLeague].map((gameId) => {
 
-            return <li key={gameId}>{gameId}</li>
+            return <GameCardContainer
+                    key={gameid}
+                    id={gameid}
+                    sendClickToParent={this.handleChildClick}
+                    activeGame={gameid === activeGame} />
         })}</ul> : '';
 
         return (

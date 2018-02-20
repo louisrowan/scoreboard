@@ -17,7 +17,7 @@ ApiRoutes.get('/gameids', (req, res) => {
 
         res.send(result);
     });
-})
+});
 
 ApiRoutes.get('/game/:league/:id', (req, res) => {
 
@@ -35,8 +35,8 @@ ApiRoutes.get('/game/:league/:id', (req, res) => {
         }
 
         res.send(result);
-    })
-})
+    });
+});
 
 
 
