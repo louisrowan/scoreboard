@@ -19,7 +19,7 @@ const getGame = (options, next) => {
         res.on('end', (e) => {
 
             const result = JSON.parse(raw);
-            return next(null, internals.parse(result.data))
+            return next(null, internals.parse(result.data, league))
         })
 
         res.on('error', (e) => {
@@ -30,7 +30,82 @@ const getGame = (options, next) => {
     });
 }
 
-internals.parse = (data) => {
+
+internals.parse = (data, league) => {
+
+    switch (league) {
+        case 'nba':
+            return internals.parseNBA(data);
+        case 'ncaab':
+            return internals.parseNCAAB(data);
+        default:
+            console.log('unknown league');
+            return null;
+    }
+}
+
+internals.parseNCAAB = (data) => {
+
+    const result = {};
+    result.id = data.id;
+    result.league = data.league.abbreviation;
+    result.leagueFullname = data.league.name;
+
+
+    const addStatus = (data) => {
+
+        const s = data.status;
+
+        const status = {};
+        status.active =  s.is_active;
+
+        if (status.active) {
+            status.period = s.period.id;
+            status.unit = s.period.unit;
+            status.time = s.period.time;
+        }
+
+        return status;
+    }
+
+
+    const addTeams = (data) => {
+
+        return data.teams.map((t) => {
+
+            const team = {};
+            team.id = t.id;
+            team.location = t.location.name;
+            team.mascot = t.name;
+            team.title = t.title;
+            team.isHome = t.location.type === 'home';
+            team.logos = {
+                base: t.logo.base,
+                _50x50: t.logo['50x50']
+            };
+            team.colors = {
+                primary: t.color.primary,
+                secondary: t.color.secondaty
+            };
+            team.record = {
+                wins: t.record.wins,
+                losses: t.record.losses
+            };
+            team.isWinner = t.is_winner;
+            team.score = t.score;
+
+            return team;
+        })
+    }
+
+    result.teams = addTeams(data);
+    result.status = addStatus(data);
+    
+    return result;
+}
+
+
+internals.parseNBA = (data) => {
 
     const getPlayerStats = (playerArray) => {
 

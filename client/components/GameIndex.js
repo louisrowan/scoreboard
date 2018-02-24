@@ -3,7 +3,10 @@
 const React = require('react');
 const Axios = require('axios');
 const GameCardContainer = require('./GameCardContainer');
-const { Button } = require('semantic-ui-react');
+const {
+    Button,
+    List
+} = require('semantic-ui-react');
 
 
 class GameIndex extends React.Component {
@@ -76,14 +79,15 @@ class GameIndex extends React.Component {
                         </Button>
         }) : '';
 
-        const games = activeLeague ? <ul>{leagues[activeLeague].map((gameId) => {
+        const games = activeLeague ? <List>{leagues[activeLeague].map((gameId) => {
 
             return <GameCardContainer
-                    key={gameid}
-                    id={gameid}
+                    key={gameId}
+                    id={gameId}
+                    league={activeLeague}
                     sendClickToParent={this.handleChildClick}
-                    activeGame={gameid === activeGame} />
-        })}</ul> : '';
+                    activeGame={gameId === activeGame} />
+        })}</List> : '';
 
         return (
             <div>

@@ -4,6 +4,8 @@ const ApiRoutes = require('express').Router();
 const GetAllGames = require('./getAllGames');
 const GetGame = require('./getGame');
 
+
+// get all gameIds
 ApiRoutes.get('/gameids', (req, res) => {
 
     GetAllGames((err, result) => {
@@ -19,6 +21,7 @@ ApiRoutes.get('/gameids', (req, res) => {
     });
 });
 
+// get game info by id
 ApiRoutes.get('/game/:league/:id', (req, res) => {
 
     const options = req.params;
@@ -28,6 +31,10 @@ ApiRoutes.get('/game/:league/:id', (req, res) => {
     }
 
     GetGame(options, (err, result) => {
+
+        console.log('');
+        console.log('getgame err?', err);
+        console.log('getgame result?', result);
 
         if (err) {
             console.log('error getting game', err)

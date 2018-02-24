@@ -2,6 +2,11 @@
 
 const React = require('react');
 
+const {
+    Grid,
+    Segment
+} = require('semantic-ui-react');
+
 class GameCardInactive extends React.Component {
 
     constructor (props) {
@@ -13,11 +18,39 @@ class GameCardInactive extends React.Component {
 
         const { game } = this.props;
 
+        const team1 = game.teams[0];
+        const team2 = game.teams[1];
+
+
+        const gameActive = game.status.active;
+
         return (
-            <span>
-                <p>{game.teams[0].name}: {game.teams[0].score}</p>
-                <p>{game.teams[1].name}: {game.teams[1].score}</p>
-            </span>
+            <Segment inverted={!!gameActive} color={gameActive ? 'teal' : ''}>
+                <Grid columns={3}>
+                    <Grid.Row>
+                        <Grid.Column>
+                            {gameActive ? game.status.period : 'F'}
+                        </Grid.Column>
+                        <Grid.Column>
+                            {team1.title}
+                        </Grid.Column>
+                        <Grid.Column>
+                            {team1.score}
+                        </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row>
+                        <Grid.Column>
+                            {gameActive ? game.status.time : ''}
+                        </Grid.Column>
+                        <Grid.Column>
+                            {team2.title}
+                        </Grid.Column>
+                        <Grid.Column>
+                            {team2.score}
+                        </Grid.Column>
+                    </Grid.Row>
+                </Grid>
+            </Segment>
         )
     };
 };
