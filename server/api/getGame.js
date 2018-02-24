@@ -91,6 +91,8 @@ internals.parseNCAAB = (data) => {
                 wins: t.record.wins,
                 losses: t.record.losses
             };
+            team.division = t.college_sub_division.name;
+            team.conference = t.conference.name;
             team.isWinner = t.is_winner;
             team.score = t.score;
 

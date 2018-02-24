@@ -21,7 +21,7 @@ class GameIndex extends React.Component {
         };
 
         this.handleChildClick = this.handleChildClick.bind(this);
-        this.handleLeagueClick = this.handleLeagueClick.bind(this);
+        this.handleGameCategorizations = this.handleGameCategorizations.bind(this);
     };
 
     componentWillMount () {
@@ -37,11 +37,23 @@ class GameIndex extends React.Component {
 
                 const data = res.data;
 
+                // TODO: make this an object with key being game id that can later be sorted instead ojust array of ids.
+
                 const leagues = {};
                 Object.keys(data).map((index) => {
 
                     const league = data[index];
-                    leagues[league.league] = league.games;
+                    leagues[league.league] = {};
+ 
+                    league.games.forEach((game) => {
+
+                        leagues[league.league][game] =  {
+                            id: game,
+                            status: null,
+                            divisions: [],
+                            conferences: []
+                        }
+                    })
                 });
                 this.setState({ leagues });
             })
@@ -50,6 +62,7 @@ class GameIndex extends React.Component {
                 console.log('err?', err);
             });
     };
+
 
     handleChildClick (id) {
 
@@ -61,10 +74,27 @@ class GameIndex extends React.Component {
         };
     };
 
-    handleLeagueClick (league) {
 
-        this.setState({ activeLeague: league });
-    }
+
+    handleGameCategorizations (args) {
+
+        // console.log('in handle', args);
+
+        const { leagues, activeLeague } = this.state;
+        const { id, status, divisions, conferences } = args;
+
+        const league = Object.assign({}, leagues[activeLeague]);
+        const game = league[id];
+
+        const newLeagues = Object.assign(
+            {},
+            { [activeLeague]: Object.assign(
+                {},
+                { [id]: args })
+            });
+
+        // this.setState({ leagues: newLeagues });
+    };
 
     render () {
 
@@ -74,20 +104,26 @@ class GameIndex extends React.Component {
 
             return <Button
                         key={league}
-                        onClick={() => this.handleLeagueClick(league)}>
+                        onClick={() => this.setState({ activeLeague: league })}>
                         {league}
                         </Button>
         }) : '';
 
-        const games = activeLeague ? <List>{leagues[activeLeague].map((gameId) => {
+        const games =
+            activeLeague ?
+                <List>{Object.keys(leagues[activeLeague]).map((gameId) => {
 
-            return <GameCardContainer
-                    key={gameId}
-                    id={gameId}
-                    league={activeLeague}
-                    sendClickToParent={this.handleChildClick}
-                    activeGame={gameId === activeGame} />
-        })}</List> : '';
+                    const game = leagues[activeLeague][gameId];
+
+                    return <GameCardContainer
+                            key={game.id}
+                            id={game.id}
+                            league={activeLeague}
+                            sendClickToParent={this.handleChildClick}
+                            sendInfoToParent={this.handleGameCategorizations}
+                            activeGame={game.id === activeGame} />
+                }).sort((a, b) => a.active ? 1 : -1)}</List>
+            : '';
 
         return (
             <div>

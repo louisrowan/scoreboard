@@ -22,8 +22,17 @@ class GameCardContainer extends React.Component {
 
     componentWillMount () {
 
+        console.log('in will mount');
+
         this.getGameData();
     };
+
+
+    shouldComponentUpdate () {
+
+
+        return false;
+    }
 
 
     getGameData () {
@@ -34,22 +43,50 @@ class GameCardContainer extends React.Component {
 
         Axios.get(url)
             .then(res => {
-                console.log('res?', res);
+
                 return res.data
             })
             .then(data => {
-                console.log('data?', data);
-                this.setState({ data, renderData: true })
+
+                this.setState({ data, renderData: true });
+                this.categorizeGame(data);
+                console.log('call categorize game');
             })
             .catch(err => {
                 console.log('err?', err);
             })
-    }
+    };
+
+
+    categorizeGame (data) {
+
+        const status = data.status.active;
+        const divisions = [];
+        const conferences = [];
+
+        data.teams.forEach((team) => {
+
+            divisions.push(team.division);
+            conferences.push(team.conference);
+        })
+
+        this.props.sendInfoToParent({
+            id: this.props.id,
+            status,
+            divisions,
+            conferences
+        });
+    };
 
 
     render () {
 
-        const { game, sendClickToParent, activeGame } = this.props;
+        const {
+            game,
+            sendClickToParent,
+            activeGame
+        } = this.props;
+
         const { data, renderData } = this.state;
 
         const content =
