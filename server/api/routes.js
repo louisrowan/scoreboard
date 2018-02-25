@@ -32,10 +32,6 @@ ApiRoutes.get('/game/:league/:id', (req, res) => {
 
     GetGame(options, (err, result) => {
 
-        console.log('');
-        console.log('getgame err?', err);
-        console.log('getgame result?', result);
-
         if (err) {
             console.log('error getting game', err)
             res.send({});

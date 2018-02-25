@@ -22,16 +22,16 @@ class GameCardContainer extends React.Component {
 
     componentWillMount () {
 
-        console.log('in will mount');
-
         this.getGameData();
     };
 
 
-    shouldComponentUpdate () {
+    shouldComponentUpdate (nextProps) {
 
-
-        return false;
+        if (this.state.renderData) {
+            return false;
+        }
+        return true;
     }
 
 
@@ -50,7 +50,6 @@ class GameCardContainer extends React.Component {
 
                 this.setState({ data, renderData: true });
                 this.categorizeGame(data);
-                console.log('call categorize game');
             })
             .catch(err => {
                 console.log('err?', err);

@@ -17,11 +17,14 @@ class GameIndex extends React.Component {
         this.state = {
             leagues: {},
             activeLeague: null,
-            activeGame: null
+            activeGame: null,
+            divisions: {},
+            conferences: {}
         };
 
         this.handleChildClick = this.handleChildClick.bind(this);
         this.handleGameCategorizations = this.handleGameCategorizations.bind(this);
+        this.handleConferenceButtonClick = this.handleConferenceButtonClick.bind(this);
     };
 
     componentWillMount () {
@@ -78,27 +81,77 @@ class GameIndex extends React.Component {
 
     handleGameCategorizations (args) {
 
-        // console.log('in handle', args);
-
         const { leagues, activeLeague } = this.state;
         const { id, status, divisions, conferences } = args;
+
+        const newDivisions = Object.assign({}, this.state.divisions);
+        const newConferences = Object.assign({}, this.state.conferences);
+
+        divisions.forEach((d) => {
+
+            if (!newDivisions[d]) {
+                newDivisions[d] = {
+                    division: d,
+                    active: false
+                };
+            }
+        });
+
+        conferences.forEach((c) => {
+
+            if (!newConferences[c]) {
+                newConferences[c] = {
+                    conference: c,
+                    active: false
+                };
+            }
+        });
 
         const league = Object.assign({}, leagues[activeLeague]);
         const game = league[id];
 
         const newLeagues = Object.assign(
             {},
+            leagues,
             { [activeLeague]: Object.assign(
                 {},
+                leagues[activeLeague],
                 { [id]: args })
             });
 
-        // this.setState({ leagues: newLeagues });
+        this.setState({
+            leagues: newLeagues,
+            divisions: newDivisions,
+            conferences: newConferences
+        });
+
+        console.log(newDivisions, newConferences);
+    };
+
+
+    handleConferenceButtonClick (conference) {
+
+        const c = this.state.conferences[conference];
+
+        this.setState({ conferences: Object.assign(
+            {},
+            this.state.conferences,
+            { [conference]: {
+                conference: conference,
+                active: !c.active
+            }}
+        )})
     };
 
     render () {
 
-        const { activeGame, leagues, activeLeague } = this.state
+        const {
+            activeGame,
+            leagues,
+            activeLeague,
+            divisions,
+            conferences
+        } = this.state
 
         const header = leagues ? Object.keys(leagues).map((league) => {
 
@@ -108,6 +161,20 @@ class GameIndex extends React.Component {
                         {league}
                         </Button>
         }) : '';
+
+        const conferenceButtons =
+        <Button.Group>
+            {Object.keys(conferences).map((conference) => {
+
+                const c = conferences[conference];
+
+                return <Button
+                        onClick={() => this.handleConferenceButtonClick(c.conference)}
+                        key={c.conference}
+                        active={c.active}>
+                        {c.conference}</Button>
+            })}
+        </Button.Group>;
 
         const games =
             activeLeague ?
@@ -122,12 +189,13 @@ class GameIndex extends React.Component {
                             sendClickToParent={this.handleChildClick}
                             sendInfoToParent={this.handleGameCategorizations}
                             activeGame={game.id === activeGame} />
-                }).sort((a, b) => a.active ? 1 : -1)}</List>
+                })}</List>
             : '';
 
         return (
             <div>
-                { leagues && header } 
+                { leagues && header }
+                { conferences && conferenceButtons }
                 { activeLeague && games }
             </div>
         )

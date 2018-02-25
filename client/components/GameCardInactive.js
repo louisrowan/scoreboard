@@ -21,6 +21,10 @@ class GameCardInactive extends React.Component {
         const team1 = game.teams[0];
         const team2 = game.teams[1];
 
+        const statusDisplay = gameActive ?
+                                game.status.period
+                            : game.status.name
+
 
         const gameActive = game.status.active;
 
@@ -29,7 +33,7 @@ class GameCardInactive extends React.Component {
                 <Grid columns={3}>
                     <Grid.Row>
                         <Grid.Column>
-                            {gameActive ? game.status.period : 'F'}
+                            {statusDisplay}
                         </Grid.Column>
                         <Grid.Column>
                             {team1.title}

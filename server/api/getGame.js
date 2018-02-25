@@ -58,6 +58,7 @@ internals.parseNCAAB = (data) => {
 
         const status = {};
         status.active =  s.is_active;
+        status.name = s.name;
 
         if (status.active) {
             status.period = s.period.id;
