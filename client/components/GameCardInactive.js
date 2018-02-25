@@ -30,9 +30,14 @@ class GameCardInactive extends React.Component {
         const color = active ? 'teal' :
                         final ? 'red' : '';
 
+        const formatHours = (num) => num > 12 ? num - 12 : num;
+
+        const start = new Date(game.startTime)
+        const formattedStart = formatHours(start.getHours()).toString().padStart(2, '0') + ':' + start.getMinutes().toString().padStart(2, '0');
+
         const time = active ? status.active ? status.time :
                     'Half'
-                    : '';
+                    : final ? '' : formattedStart;
 
 
 

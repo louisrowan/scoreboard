@@ -9,6 +9,8 @@ const {
 } = require('semantic-ui-react');
 
 
+let count = 0;
+
 
 const sortedGames = (league) => {
 
@@ -39,8 +41,9 @@ class GameIndex extends React.Component {
 
         this.handleChildClick = this.handleChildClick.bind(this);
         this.handleGameCategorizations = this.handleGameCategorizations.bind(this);
-        this.handleConferenceButtonClick = this.handleConferenceButtonClick.bind(this);
+        this.handleDivisionConferenceButtonClick = this.handleDivisionConferenceButtonClick.bind(this);
         this.handleChildStatusUpdate = this.handleChildStatusUpdate.bind(this);
+        this.filteredGames = this.filteredGames.bind(this);
     };
 
     componentWillMount () {
@@ -140,27 +143,47 @@ class GameIndex extends React.Component {
     };
 
 
-    handleConferenceButtonClick (conference) {
+    handleDivisionConferenceButtonClick (group, type) {
 
-        const c = this.state.conferences[conference];
+        if (type === 'division') {
 
-        this.setState({ conferences: Object.assign(
-            {},
-            this.state.conferences,
-            { [conference]: {
-                conference: conference,
-                active: !c.active
-            }}
-        )})
+            const division = group;
+            const d = this.state.divisions[division];
+
+            this.setState({ divisions: Object.assign(
+                {},
+                this.state.divisions,
+                { [division]: {
+                    division: division,
+                    active: !d.active
+                }}
+            )})
+
+        } else if (type === 'conference') {
+
+            const conference = group;
+            const c = this.state.conferences[conference];
+
+            this.setState({ conferences: Object.assign(
+                {},
+                this.state.conferences,
+                { [conference]: {
+                    conference: conference,
+                    active: !c.active
+                }}
+            )})
+
+        } else {
+            console.log('mismatch in division confere', type);
+        }
+
     };
 
 
     handleChildStatusUpdate (childData) {
 
         const { leagues, activeLeague } = this.state;
-
         const { status } = childData;
-
         const league = leagues[activeLeague];
 
         let game = league[childData.id];
@@ -196,6 +219,49 @@ class GameIndex extends React.Component {
     };
 
 
+    filteredGames (game) {
+
+        const { leagues, activeLeague, divisions, conferences } = this.state;
+
+        const league = leagues[activeLeague];
+
+        const activeDivisions = Object.keys(divisions).filter((d) => {
+
+            d = divisions[d];
+            return d.active;
+        });
+
+        const activeConferences = Object.keys(conferences).filter((c) => {
+            c = conferences[c];
+            return c.active
+        });
+
+        game = league[game.key];
+
+        if (activeDivisions.length) {
+            let hasDivision = false;
+            activeDivisions.forEach((d) => {
+                if (game.divisions.includes(d)) {
+                    hasDivision = true;
+                }
+            })
+            if (!hasDivision) return false;
+        }
+
+        if (activeConferences.length) {
+            let hasConference = false;
+            activeConferences.forEach((d) => {
+                if (game.conferences.includes(d)) {
+                    hasConference = true;
+                }
+            })
+            if (!hasConference) return false;
+        }
+
+        return true;
+    }
+
+
     render () {
 
         const {
@@ -215,6 +281,20 @@ class GameIndex extends React.Component {
                         </Button>
         }) : '';
 
+        const divisionButtons =
+        <Button.Group>
+            {Object.keys(divisions).map((division) => {
+
+                const d = divisions[division];
+
+                return <Button
+                        onClick={() => this.handleDivisionConferenceButtonClick(d.division, 'division')}
+                        key={d.division}
+                        active={d.active}>
+                        {d.division}</Button>
+            })}
+        </Button.Group>;
+
         const conferenceButtons =
         <Button.Group>
             {Object.keys(conferences).map((conference) => {
@@ -222,7 +302,7 @@ class GameIndex extends React.Component {
                 const c = conferences[conference];
 
                 return <Button
-                        onClick={() => this.handleConferenceButtonClick(c.conference)}
+                        onClick={() => this.handleDivisionConferenceButtonClick(c.conference, 'conference')}
                         key={c.conference}
                         active={c.active}>
                         {c.conference}</Button>
@@ -243,12 +323,15 @@ class GameIndex extends React.Component {
                             sendInfoToParent={this.handleGameCategorizations}
                             sendStatusInfo={this.handleChildStatusUpdate}
                             activeGame={game.id === activeGame} />
-                })}</List>
+                }).filter(this.filteredGames)}</List>
             : '';
 
         return (
             <div>
                 { leagues && header }
+                <br />
+                { divisions && divisionButtons }
+                <br />
                 { conferences && conferenceButtons }
                 { activeLeague && games }
             </div>

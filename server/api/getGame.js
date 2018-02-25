@@ -50,7 +50,7 @@ internals.parseNCAAB = (data) => {
     result.id = data.id;
     result.league = data.league.abbreviation;
     result.leagueFullname = data.league.name;
-    result.startTime = data.start.utc;
+    result.startTime = new Date(data.start.utc);
 
 
     const addStatus = (data) => {
