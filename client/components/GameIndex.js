@@ -5,7 +5,8 @@ const Axios = require('axios');
 const GameCardContainer = require('./GameCardContainer');
 const {
     Button,
-    List
+    List,
+    Segment
 } = require('semantic-ui-react');
 
 
@@ -272,17 +273,20 @@ class GameIndex extends React.Component {
             conferences
         } = this.state
 
-        const header = leagues ? Object.keys(leagues).map((league) => {
+        const header = leagues ?
+        <Segment>
+            {Object.keys(leagues).map((league) => {
 
-            return <Button
-                        key={league}
-                        onClick={() => this.setState({ activeLeague: league })}>
-                        {league}
-                        </Button>
-        }) : '';
+                return <Button
+                            key={league}
+                            onClick={() => this.setState({ activeLeague: league })}>
+                            {league}
+                            </Button>
+            })}
+        </Segment> : '';
 
-        const divisionButtons =
-        <Button.Group>
+        const divisionButtons = Object.keys(divisions).length > 0 ?
+        <Segment>
             {Object.keys(divisions).map((division) => {
 
                 const d = divisions[division];
@@ -290,13 +294,13 @@ class GameIndex extends React.Component {
                 return <Button
                         onClick={() => this.handleDivisionConferenceButtonClick(d.division, 'division')}
                         key={d.division}
-                        active={d.active}>
+                        positive={d.active}>
                         {d.division}</Button>
             })}
-        </Button.Group>;
+        </Segment>: '';
 
-        const conferenceButtons =
-        <Button.Group>
+        const conferenceButtons = Object.keys(conferences).length > 0 ?
+        <Segment>
             {Object.keys(conferences).map((conference) => {
 
                 const c = conferences[conference];
@@ -304,10 +308,10 @@ class GameIndex extends React.Component {
                 return <Button
                         onClick={() => this.handleDivisionConferenceButtonClick(c.conference, 'conference')}
                         key={c.conference}
-                        active={c.active}>
+                        positive={c.active}>
                         {c.conference}</Button>
             })}
-        </Button.Group>;
+        </Segment> : '';
 
         const games =
             activeLeague ?
@@ -328,11 +332,11 @@ class GameIndex extends React.Component {
 
         return (
             <div>
-                { leagues && header }
-                <br />
-                { divisions && divisionButtons }
-                <br />
-                { conferences && conferenceButtons }
+                <Segment.Group>
+                { header }
+                { divisionButtons }
+                { conferenceButtons }
+                </Segment.Group>
                 { activeLeague && games }
             </div>
         )
