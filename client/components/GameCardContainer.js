@@ -50,6 +50,7 @@ class GameCardContainer extends React.Component {
 
                 this.setState({ data, renderData: true });
                 this.categorizeGame(data);
+                this.props.sendStatusInfo(data);
             })
             .catch(err => {
                 console.log('err?', err);
@@ -59,7 +60,6 @@ class GameCardContainer extends React.Component {
 
     categorizeGame (data) {
 
-        const status = data.status.active;
         const divisions = [];
         const conferences = [];
 
@@ -71,7 +71,6 @@ class GameCardContainer extends React.Component {
 
         this.props.sendInfoToParent({
             id: this.props.id,
-            status,
             divisions,
             conferences
         });

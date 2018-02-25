@@ -9,6 +9,21 @@ const {
 } = require('semantic-ui-react');
 
 
+
+const sortedGames = (league) => {
+
+    const sorted = Object.keys(league).sort((a, b) => {
+
+        a = league[a];
+        b = league[b];
+
+        return a.statusInt < b.statusInt ? -1 : 1;
+    })
+
+    return sorted;
+}
+
+
 class GameIndex extends React.Component {
 
     constructor () {
@@ -25,6 +40,7 @@ class GameIndex extends React.Component {
         this.handleChildClick = this.handleChildClick.bind(this);
         this.handleGameCategorizations = this.handleGameCategorizations.bind(this);
         this.handleConferenceButtonClick = this.handleConferenceButtonClick.bind(this);
+        this.handleChildStatusUpdate = this.handleChildStatusUpdate.bind(this);
     };
 
     componentWillMount () {
@@ -40,8 +56,6 @@ class GameIndex extends React.Component {
 
                 const data = res.data;
 
-                // TODO: make this an object with key being game id that can later be sorted instead ojust array of ids.
-
                 const leagues = {};
                 Object.keys(data).map((index) => {
 
@@ -52,7 +66,6 @@ class GameIndex extends React.Component {
 
                         leagues[league.league][game] =  {
                             id: game,
-                            status: null,
                             divisions: [],
                             conferences: []
                         }
@@ -82,7 +95,7 @@ class GameIndex extends React.Component {
     handleGameCategorizations (args) {
 
         const { leagues, activeLeague } = this.state;
-        const { id, status, divisions, conferences } = args;
+        const { id, divisions, conferences } = args;
 
         const newDivisions = Object.assign({}, this.state.divisions);
         const newConferences = Object.assign({}, this.state.conferences);
@@ -124,8 +137,6 @@ class GameIndex extends React.Component {
             divisions: newDivisions,
             conferences: newConferences
         });
-
-        console.log(newDivisions, newConferences);
     };
 
 
@@ -142,6 +153,48 @@ class GameIndex extends React.Component {
             }}
         )})
     };
+
+
+    handleChildStatusUpdate (childData) {
+
+        const { leagues, activeLeague } = this.state;
+
+        const { status } = childData;
+
+        const league = leagues[activeLeague];
+
+        let game = league[childData.id];
+        game = Object.assign({}, game);
+        game.status = status.name;
+
+        switch (game.status) {
+            case 'In-Progress':
+                game.statusInt = 1;
+                break;
+            case 'Pre-Game':
+                game.statusInt = 2;
+                break;
+            case 'Final':
+                game.statusInt = 3;
+                break;
+        }
+
+        const newLeagues = Object.assign(
+            {},
+            leagues,
+            { [activeLeague]: Object.assign(
+                {},
+                leagues[activeLeague],
+                { [childData.id]: Object.assign(
+                    {},
+                    leagues[activeLeague][childData.id],
+                    game)
+                })
+            });
+
+        this.setState({ leagues: newLeagues })
+    };
+
 
     render () {
 
@@ -178,7 +231,7 @@ class GameIndex extends React.Component {
 
         const games =
             activeLeague ?
-                <List>{Object.keys(leagues[activeLeague]).map((gameId) => {
+                <List>{sortedGames(leagues[activeLeague]).map((gameId) => {
 
                     const game = leagues[activeLeague][gameId];
 
@@ -188,6 +241,7 @@ class GameIndex extends React.Component {
                             league={activeLeague}
                             sendClickToParent={this.handleChildClick}
                             sendInfoToParent={this.handleGameCategorizations}
+                            sendStatusInfo={this.handleChildStatusUpdate}
                             activeGame={game.id === activeGame} />
                 })}</List>
             : '';

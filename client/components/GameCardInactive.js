@@ -17,23 +17,31 @@ class GameCardInactive extends React.Component {
     render () {
 
         const { game } = this.props;
+        const { status } = game;
 
         const team1 = game.teams[0];
         const team2 = game.teams[1];
 
-        const statusDisplay = gameActive ?
-                                game.status.period
-                            : game.status.name
+        
+        const active = status.name === 'In-Progress';
+        const final = status.name === 'Final';
+        const inverted = !!active || !!final;
+
+        const color = active ? 'teal' :
+                        final ? 'red' : '';
+
+        const time = active ? status.active ? status.time :
+                    'Half'
+                    : '';
 
 
-        const gameActive = game.status.active;
 
         return (
-            <Segment inverted={!!gameActive} color={gameActive ? 'teal' : ''}>
+            <Segment inverted={inverted} color={color}>
                 <Grid columns={3}>
                     <Grid.Row>
                         <Grid.Column>
-                            {statusDisplay}
+                            {active ? `${status.period} ${status.unit}`: status.name}
                         </Grid.Column>
                         <Grid.Column>
                             {team1.title}
@@ -44,7 +52,7 @@ class GameCardInactive extends React.Component {
                     </Grid.Row>
                     <Grid.Row>
                         <Grid.Column>
-                            {gameActive ? game.status.time : ''}
+                            {time}
                         </Grid.Column>
                         <Grid.Column>
                             {team2.title}

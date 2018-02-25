@@ -50,6 +50,7 @@ internals.parseNCAAB = (data) => {
     result.id = data.id;
     result.league = data.league.abbreviation;
     result.leagueFullname = data.league.name;
+    result.startTime = data.start.utc;
 
 
     const addStatus = (data) => {
@@ -60,7 +61,7 @@ internals.parseNCAAB = (data) => {
         status.active =  s.is_active;
         status.name = s.name;
 
-        if (status.active) {
+        if (s.period) {
             status.period = s.period.id;
             status.unit = s.period.unit;
             status.time = s.period.time;
