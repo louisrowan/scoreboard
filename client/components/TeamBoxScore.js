@@ -22,7 +22,7 @@ class TeamBoxScore extends React.Component {
         const stats = {};
         Object.keys(playerStats[0]).forEach((key) => {
             if (typeof playerStats[0][key] === 'number') {
-                stats[key] = Table.Rowue;
+                stats[key] = true;
             }
         });
 

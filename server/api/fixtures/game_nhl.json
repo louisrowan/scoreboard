@@ -1,0 +1,4212 @@
+{
+  "id": 1920965,
+  "league": {
+    "name": "National Hockey League",
+    "abbreviation": "NHL"
+  },
+  "start": {
+    "local": "2018-02-25T19:30:00",
+    "utc": "2018-02-26T00:30:00",
+    "epoch": 1519605000
+  },
+  "tv": "FSDT",
+  "tv_stations": [
+    {
+      "tv_station_id": 192,
+      "name": "FOX Sports Detroit",
+      "call_letters": "FSDT",
+      "network_type": {
+        "network_type_id": 2,
+        "name": "Regional"
+      },
+      "country": {
+        "country_id": 1,
+        "name": "United States",
+        "abbreviation": "USA"
+      }
+    },
+    {
+      "tv_station_id": 130,
+      "name": "MSG",
+      "call_letters": "MSG",
+      "network_type": {
+        "network_type_id": 2,
+        "name": "Regional"
+      },
+      "country": {
+        "country_id": 1,
+        "name": "United States",
+        "abbreviation": "USA"
+      }
+    }
+  ],
+  "watch": {
+    "name": "Fubo",
+    "text": "Watch Live on",
+    "url": "https://www.fubo.tv/watch/NHL?irmp=376635&utm_source=Aff&utm_medium=SI&utm_campaign=NHL",
+    "tracking": {
+      "Scoreboard": "&utm_term=Scoreboard&irad=360691",
+      "Schedule": "&utm_term=Schedule&irad=360702"
+    },
+    "logo": {
+      "base": "https://cdn-s3.si.com/s3fs-public/logos/",
+      "cuts": {
+        "default": "fubo_40x14_orange.png",
+        "38x14": "fubo_38x14_orange.png",
+        "40x14": "fubo_40x14_orange.png",
+        "76x28": "fubo_76x28_orange.png",
+        "80x28": "fubo_80x28_orange.png"
+      }
+    },
+    "station": {
+      "tv_station_id": 192,
+      "name": "FOX Sports Detroit",
+      "call_letters": "FSDT",
+      "network_type": {
+        "network_type_id": 2,
+        "name": "Regional"
+      },
+      "country": {
+        "country_id": 1,
+        "name": "United States",
+        "abbreviation": "USA"
+      }
+    }
+  },
+  "tickets": {},
+  "venue": {
+    "name": "Madison Square Garden",
+    "city": "New York",
+    "state": {
+      "name": "New York",
+      "abbreviation": "NY"
+    },
+    "country": {
+      "name": "United States",
+      "abbreviation": "USA"
+    }
+  },
+  "status": {
+    "period": {
+      "id": 4,
+      "name": "OT",
+      "unit": "Period",
+      "full_name": "Overtime"
+    },
+    "name": "Final",
+    "id": 4,
+    "is_active": false,
+    "is_under_review": false,
+    "is_penalty_shot": false
+  },
+  "teams": [
+    {
+      "id": 4966,
+      "name": "Rangers",
+      "abbreviation": "NYR",
+      "location": {
+        "name": "New York",
+        "type": "home"
+      },
+      "title": "New York Rangers",
+      "logo": {
+        "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/logos/",
+        "cuts": {
+          "default": "rangers_50.png",
+          "50x50": "rangers_50.png",
+          "100x100": "rangers_100.png",
+          "100x100_light": "rangers_100_stroke.png",
+          "360x360": "rangers_360.png",
+          "250x250": "rangers_250.png",
+          "150x150": "rangers_150.png",
+          "40x40": "rangers_40.png",
+          "40x40_light": "rangers_40_stroke.png"
+        }
+      },
+      "color": {
+        "primary": "#0032a0",
+        "secondary": "#d0112b"
+      },
+      "slug": "nhl/team/new-york-rangers",
+      "record": {
+        "wins": 27,
+        "losses": 30,
+        "overtime_losses": 6
+      },
+      "score": 2,
+      "shots": 38,
+      "is_winner": false,
+      "linescores": [
+        {
+          "period": {
+            "id": 1,
+            "name": "1st",
+            "unit": "Period",
+            "full_name": "1st"
+          },
+          "score": 0,
+          "shots": 13
+        },
+        {
+          "period": {
+            "id": 2,
+            "name": "2nd",
+            "unit": "Period",
+            "full_name": "2nd"
+          },
+          "score": 1,
+          "shots": 6
+        },
+        {
+          "period": {
+            "id": 3,
+            "name": "3rd",
+            "unit": "Period",
+            "full_name": "3rd"
+          },
+          "score": 1,
+          "shots": 19
+        },
+        {
+          "period": {
+            "id": 4,
+            "name": "OT",
+            "unit": "Period",
+            "full_name": "Overtime"
+          },
+          "score": 0,
+          "shots": 0
+        }
+      ],
+      "taxonomy": {
+        "teams": "nhl-new-york-rangers",
+        "airship": [
+          {
+            "name": "Game Start",
+            "tag": "events::nhl-new-york-rangers-1"
+          },
+          {
+            "name": "Period",
+            "tag": "events::nhl-new-york-rangers-2"
+          },
+          {
+            "name": "Scoring Plays",
+            "tag": "events::nhl-new-york-rangers-3"
+          },
+          {
+            "name": "Final",
+            "tag": "events::nhl-new-york-rangers-4"
+          },
+          {
+            "name": "Team News",
+            "tag": "teams::nhl-new-york-rangers"
+          }
+        ]
+      },
+      "leaders": {
+        "goals": {
+          "name": "goals",
+          "abbreviation": "Goals",
+          "value": 1,
+          "players": [
+            {
+              "name": {
+                "first": "J.T.",
+                "last": "Miller"
+              },
+              "uniform": "10",
+              "slug": "nhl/player/600111/jt-miller",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+                "cuts": {
+                  "default": "600111-84x74.png",
+                  "84x74": "600111-84x74.png",
+                  "300x300": "600111-300x300.png"
+                }
+              },
+              "id": 600111,
+              "league": {
+                "name": "National Hockey League",
+                "abbreviation": "NHL"
+              }
+            },
+            {
+              "name": {
+                "first": "Jesper",
+                "last": "Fast"
+              },
+              "uniform": "17",
+              "slug": "nhl/player/555872/jesper-fast",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+                "cuts": {
+                  "default": "555872-84x74.png",
+                  "84x74": "555872-84x74.png",
+                  "300x300": "555872-300x300.png"
+                }
+              },
+              "id": 555872,
+              "league": {
+                "name": "National Hockey League",
+                "abbreviation": "NHL"
+              }
+            }
+          ]
+        },
+        "assists": {
+          "name": "assists",
+          "abbreviation": "Assists",
+          "value": 2,
+          "players": [
+            {
+              "name": {
+                "first": "Ryan",
+                "last": "Spooner"
+              },
+              "uniform": "23",
+              "slug": "nhl/player/554492/ryan-spooner",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+                "cuts": {
+                  "default": "554492-84x74.png",
+                  "84x74": "554492-84x74.png",
+                  "300x300": "554492-300x300.png"
+                }
+              },
+              "id": 554492,
+              "league": {
+                "name": "National Hockey League",
+                "abbreviation": "NHL"
+              }
+            }
+          ]
+        },
+        "goals_against": {
+          "name": "goals_against",
+          "abbreviation": "Goals Against",
+          "value": 3,
+          "players": [
+            {
+              "name": {
+                "first": "Henrik",
+                "last": "Lundqvist"
+              },
+              "uniform": "30",
+              "slug": "nhl/player/184061/henrik-lundqvist",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+                "cuts": {
+                  "default": "184061-84x74.png",
+                  "84x74": "184061-84x74.png",
+                  "300x300": "184061-300x300.png"
+                }
+              },
+              "id": 184061,
+              "league": {
+                "name": "National Hockey League",
+                "abbreviation": "NHL"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 4958,
+      "name": "Red Wings",
+      "abbreviation": "Det",
+      "location": {
+        "name": "Detroit",
+        "type": "away"
+      },
+      "title": "Detroit Red Wings",
+      "logo": {
+        "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/logos/",
+        "cuts": {
+          "default": "red_wings_50.png",
+          "50x50": "red_wings_50.png",
+          "100x100": "red_wings_100.png",
+          "100x100_light": "red_wings_100_stroke.png",
+          "360x360": "red_wings_360.png",
+          "250x250": "red_wings_250.png",
+          "150x150": "red_wings_150.png",
+          "40x40": "red_wings_40.png",
+          "40x40_light": "red_wings_40_stroke.png"
+        }
+      },
+      "color": {
+        "primary": "#d0112b",
+        "secondary": "#ffffff"
+      },
+      "slug": "nhl/team/detroit-red-wings",
+      "record": {
+        "wins": 26,
+        "losses": 26,
+        "overtime_losses": 10
+      },
+      "score": 3,
+      "shots": 34,
+      "is_winner": true,
+      "linescores": [
+        {
+          "period": {
+            "id": 1,
+            "name": "1st",
+            "unit": "Period",
+            "full_name": "1st"
+          },
+          "score": 1,
+          "shots": 11
+        },
+        {
+          "period": {
+            "id": 2,
+            "name": "2nd",
+            "unit": "Period",
+            "full_name": "2nd"
+          },
+          "score": 1,
+          "shots": 12
+        },
+        {
+          "period": {
+            "id": 3,
+            "name": "3rd",
+            "unit": "Period",
+            "full_name": "3rd"
+          },
+          "score": 0,
+          "shots": 10
+        },
+        {
+          "period": {
+            "id": 4,
+            "name": "OT",
+            "unit": "Period",
+            "full_name": "Overtime"
+          },
+          "score": 1,
+          "shots": 1
+        }
+      ],
+      "taxonomy": {
+        "teams": "nhl-detroit-red-wings",
+        "airship": [
+          {
+            "name": "Game Start",
+            "tag": "events::nhl-detroit-red-wings-1"
+          },
+          {
+            "name": "Period",
+            "tag": "events::nhl-detroit-red-wings-2"
+          },
+          {
+            "name": "Scoring Plays",
+            "tag": "events::nhl-detroit-red-wings-3"
+          },
+          {
+            "name": "Final",
+            "tag": "events::nhl-detroit-red-wings-4"
+          },
+          {
+            "name": "Team News",
+            "tag": "teams::nhl-detroit-red-wings"
+          }
+        ]
+      },
+      "leaders": {
+        "goals": {
+          "name": "goals",
+          "abbreviation": "Goals",
+          "value": 1,
+          "players": [
+            {
+              "name": {
+                "first": "Darren",
+                "last": "Helm"
+              },
+              "uniform": "43",
+              "slug": "nhl/player/339752/darren-helm",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+                "cuts": {
+                  "default": "339752-84x74.png",
+                  "84x74": "339752-84x74.png",
+                  "300x300": "339752-300x300.png"
+                }
+              },
+              "id": 339752,
+              "league": {
+                "name": "National Hockey League",
+                "abbreviation": "NHL"
+              }
+            },
+            {
+              "name": {
+                "first": "Andreas",
+                "last": "Athanasiou"
+              },
+              "uniform": "72",
+              "slug": "nhl/player/681424/andreas-athanasiou",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+                "cuts": {
+                  "default": "681424-84x74.png",
+                  "84x74": "681424-84x74.png",
+                  "300x300": "681424-300x300.png"
+                }
+              },
+              "id": 681424,
+              "league": {
+                "name": "National Hockey League",
+                "abbreviation": "NHL"
+              }
+            },
+            {
+              "name": {
+                "first": "Trevor",
+                "last": "Daley"
+              },
+              "uniform": "83",
+              "slug": "nhl/player/172243/trevor-daley",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+                "cuts": {
+                  "default": "172243-84x74.png",
+                  "84x74": "172243-84x74.png",
+                  "300x300": "172243-300x300.png"
+                }
+              },
+              "id": 172243,
+              "league": {
+                "name": "National Hockey League",
+                "abbreviation": "NHL"
+              }
+            }
+          ]
+        },
+        "assists": {
+          "name": "assists",
+          "abbreviation": "Assists",
+          "value": 1,
+          "players": [
+            {
+              "name": {
+                "first": "Frans",
+                "last": "Nielsen"
+              },
+              "uniform": "51",
+              "slug": "nhl/player/326033/frans-nielsen",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+                "cuts": {
+                  "default": "326033-84x74.png",
+                  "84x74": "326033-84x74.png",
+                  "300x300": "326033-300x300.png"
+                }
+              },
+              "id": 326033,
+              "league": {
+                "name": "National Hockey League",
+                "abbreviation": "NHL"
+              }
+            },
+            {
+              "name": {
+                "first": "Nick",
+                "last": "Jensen"
+              },
+              "uniform": "3",
+              "slug": "nhl/player/733469/nick-jensen",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+                "cuts": {
+                  "default": "733469-84x74.png",
+                  "84x74": "733469-84x74.png",
+                  "300x300": "733469-300x300.png"
+                }
+              },
+              "id": 733469,
+              "league": {
+                "name": "National Hockey League",
+                "abbreviation": "NHL"
+              }
+            },
+            {
+              "name": {
+                "first": "Dylan",
+                "last": "Larkin"
+              },
+              "uniform": "71",
+              "slug": "nhl/player/831080/dylan-larkin",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+                "cuts": {
+                  "default": "831080-84x74.png",
+                  "84x74": "831080-84x74.png",
+                  "300x300": "831080-300x300.png"
+                }
+              },
+              "id": 831080,
+              "league": {
+                "name": "National Hockey League",
+                "abbreviation": "NHL"
+              }
+            },
+            {
+              "name": {
+                "first": "Tomas",
+                "last": "Tatar"
+              },
+              "uniform": "21",
+              "slug": "nhl/player/522267/tomas-tatar",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+                "cuts": {
+                  "default": "522267-84x74.png",
+                  "84x74": "522267-84x74.png",
+                  "300x300": "522267-300x300.png"
+                }
+              },
+              "id": 522267,
+              "league": {
+                "name": "National Hockey League",
+                "abbreviation": "NHL"
+              }
+            }
+          ]
+        },
+        "goals_against": {
+          "name": "goals_against",
+          "abbreviation": "Goals Against",
+          "value": 2,
+          "players": [
+            {
+              "name": {
+                "first": "Jimmy",
+                "last": "Howard"
+              },
+              "uniform": "35",
+              "slug": "nhl/player/298149/jimmy-howard",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+                "cuts": {
+                  "default": "298149-84x74.png",
+                  "84x74": "298149-84x74.png",
+                  "300x300": "298149-300x300.png"
+                }
+              },
+              "id": 298149,
+              "league": {
+                "name": "National Hockey League",
+                "abbreviation": "NHL"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "alert_types": [
+    {
+      "name": "Game Start",
+      "airship": "events::1519603200-1920965-1"
+    },
+    {
+      "name": "Period",
+      "airship": "events::1519603200-1920965-2"
+    },
+    {
+      "name": "Scoring Play",
+      "airship": "events::1519603200-1920965-3"
+    },
+    {
+      "name": "Final",
+      "airship": "events::1519603200-1920965-4"
+    }
+  ],
+  "last_play": {
+    "period": {
+      "id": 4,
+      "name": "OT",
+      "unit": "Period",
+      "full_name": "Overtime"
+    },
+    "time": {
+      "minutes": 5,
+      "seconds": 0
+    },
+    "text": "End of Game"
+  },
+  "links": [
+    {
+      "name": "Recap",
+      "url": "https://www.si.com/nhl/game/1920965",
+      "id": 1
+    },
+    {
+      "name": "Box Score",
+      "url": "https://www.si.com/nhl/game/1920965/box-score",
+      "id": 2
+    },
+    {
+      "name": "Play-by-Play",
+      "url": "https://www.si.com/nhl/game/1920965/play-by-play",
+      "id": 3
+    }
+  ],
+  "scoring_summaries": [
+    {
+      "period": {
+        "id": 1,
+        "name": "1st",
+        "unit": "Period",
+        "full_name": "1st"
+      },
+      "goals": [
+        {
+          "time": "19:53",
+          "team_id": 4958,
+          "text": "Andreas Athanasiou scores a goal assisted by Nick Jensen and Dylan Larkin",
+          "current_score": {
+            "home": 0,
+            "away": 1
+          },
+          "player": {
+            "name": {
+              "first": "Andreas",
+              "last": "Athanasiou"
+            },
+            "uniform": "72",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "681424-84x74.png",
+                "84x74": "681424-84x74.png",
+                "300x300": "681424-300x300.png"
+              }
+            },
+            "slug": "nhl/player/681424/andreas-athanasiou"
+          },
+          "id": 681424,
+          "league": {
+            "name": "National Hockey League",
+            "abbreviation": "NHL"
+          },
+          "strength": {
+            "id": 701,
+            "name": "Even"
+          }
+        }
+      ]
+    },
+    {
+      "period": {
+        "id": 2,
+        "name": "2nd",
+        "unit": "Period",
+        "full_name": "2nd"
+      },
+      "goals": [
+        {
+          "time": "4:31",
+          "team_id": 4958,
+          "text": "Darren Helm scores a goal",
+          "current_score": {
+            "home": 0,
+            "away": 2
+          },
+          "player": {
+            "name": {
+              "first": "Darren",
+              "last": "Helm"
+            },
+            "uniform": "43",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "339752-84x74.png",
+                "84x74": "339752-84x74.png",
+                "300x300": "339752-300x300.png"
+              }
+            },
+            "slug": "nhl/player/339752/darren-helm"
+          },
+          "id": 339752,
+          "league": {
+            "name": "National Hockey League",
+            "abbreviation": "NHL"
+          },
+          "strength": {
+            "id": 701,
+            "name": "Even"
+          }
+        },
+        {
+          "time": "7:51",
+          "team_id": 4966,
+          "text": "J.T. Miller scores a power-play goal assisted by Ryan Spooner and Tony DeAngelo",
+          "current_score": {
+            "home": 1,
+            "away": 2
+          },
+          "player": {
+            "name": {
+              "first": "J.T.",
+              "last": "Miller"
+            },
+            "uniform": "10",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "600111-84x74.png",
+                "84x74": "600111-84x74.png",
+                "300x300": "600111-300x300.png"
+              }
+            },
+            "slug": "nhl/player/600111/jt-miller"
+          },
+          "id": 600111,
+          "league": {
+            "name": "National Hockey League",
+            "abbreviation": "NHL"
+          },
+          "strength": {
+            "id": 702,
+            "name": "Power-Play"
+          }
+        }
+      ]
+    },
+    {
+      "period": {
+        "id": 3,
+        "name": "3rd",
+        "unit": "Period",
+        "full_name": "3rd"
+      },
+      "goals": [
+        {
+          "time": "11:16",
+          "team_id": 4966,
+          "text": "Jesper Fast scores a goal assisted by Kevin Hayes and Ryan Spooner",
+          "current_score": {
+            "home": 2,
+            "away": 2
+          },
+          "player": {
+            "name": {
+              "first": "Jesper",
+              "last": "Fast"
+            },
+            "uniform": "17",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "555872-84x74.png",
+                "84x74": "555872-84x74.png",
+                "300x300": "555872-300x300.png"
+              }
+            },
+            "slug": "nhl/player/555872/jesper-fast"
+          },
+          "id": 555872,
+          "league": {
+            "name": "National Hockey League",
+            "abbreviation": "NHL"
+          },
+          "strength": {
+            "id": 701,
+            "name": "Even"
+          }
+        }
+      ]
+    },
+    {
+      "period": {
+        "id": 4,
+        "name": "OT",
+        "unit": "Period",
+        "full_name": "Overtime"
+      },
+      "goals": [
+        {
+          "time": "4:54",
+          "team_id": 4958,
+          "text": "Trevor Daley scores a goal assisted by Frans Nielsen and Tomas Tatar",
+          "current_score": {
+            "home": 2,
+            "away": 3
+          },
+          "player": {
+            "name": {
+              "first": "Trevor",
+              "last": "Daley"
+            },
+            "uniform": "83",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "172243-84x74.png",
+                "84x74": "172243-84x74.png",
+                "300x300": "172243-300x300.png"
+              }
+            },
+            "slug": "nhl/player/172243/trevor-daley"
+          },
+          "id": 172243,
+          "league": {
+            "name": "National Hockey League",
+            "abbreviation": "NHL"
+          },
+          "strength": {
+            "id": 701,
+            "name": "Even"
+          }
+        }
+      ]
+    }
+  ],
+  "box_scores": [
+    {
+      "team_id": 4958,
+      "player_skater_stats": [
+        {
+          "player": {
+            "name": {
+              "first": "Darren",
+              "last": "Helm"
+            },
+            "uniform": "43",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "339752-84x74.png",
+                "84x74": "339752-84x74.png",
+                "300x300": "339752-300x300.png"
+              }
+            },
+            "slug": "nhl/player/339752/darren-helm",
+            "id": 339752,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 3,
+          "plus_minus": 1,
+          "penalty_minutes": 0,
+          "hits": 0,
+          "blocks": 1,
+          "shifts": 25,
+          "goals": {
+            "total": 1,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 2,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 17,
+            "seconds": 35
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 38
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 16,
+            "seconds": 57
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 2,
+              "shots": 2
+            },
+            {
+              "period": 3,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 1,
+          "corsi": -6,
+          "fenwick": -5,
+          "zone_starts": {
+            "offensive_faceoffs": 5,
+            "defensive_faceoffs": 10,
+            "percentage": "33.33"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Frans",
+              "last": "Nielsen"
+            },
+            "uniform": "51",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "326033-84x74.png",
+                "84x74": "326033-84x74.png",
+                "300x300": "326033-300x300.png"
+              }
+            },
+            "slug": "nhl/player/326033/frans-nielsen",
+            "id": 326033,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 2,
+          "plus_minus": 2,
+          "penalty_minutes": 0,
+          "hits": 2,
+          "blocks": 1,
+          "shifts": 28,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 1,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 9,
+            "lost": 9
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 1
+          },
+          "time_on_ice": {
+            "minutes": 17,
+            "seconds": 39
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 49
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 16,
+            "seconds": 50
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 1
+            },
+            {
+              "period": 2,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 0,
+          "corsi": -5,
+          "fenwick": -6,
+          "zone_starts": {
+            "offensive_faceoffs": 5,
+            "defensive_faceoffs": 13,
+            "percentage": "27.78"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Jimmy",
+              "last": "Howard"
+            },
+            "uniform": "35",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "298149-84x74.png",
+                "84x74": "298149-84x74.png",
+                "300x300": "298149-300x300.png"
+              }
+            },
+            "slug": "nhl/player/298149/jimmy-howard",
+            "id": 298149,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 0,
+          "plus_minus": 0,
+          "penalty_minutes": 0,
+          "hits": 0,
+          "blocks": 0,
+          "shifts": 0,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 64,
+            "seconds": 54
+          },
+          "power_play_time_on_ice": {
+            "minutes": 5,
+            "seconds": 0
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 2,
+            "seconds": 56
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 56,
+            "seconds": 58
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "missed_shots": 0
+        },
+        {
+          "player": {
+            "name": {
+              "first": "David",
+              "last": "Booth"
+            },
+            "uniform": "17",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "329839-84x74.png",
+                "84x74": "329839-84x74.png",
+                "300x300": "329839-300x300.png"
+              }
+            },
+            "slug": "nhl/player/329839/david-booth",
+            "id": 329839,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 1,
+          "plus_minus": 0,
+          "penalty_minutes": 2,
+          "hits": 0,
+          "blocks": 2,
+          "shifts": 13,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 1,
+            "lost": 3
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 9,
+            "seconds": 6
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 9,
+            "seconds": 6
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 3,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 2,
+          "corsi": -10,
+          "fenwick": -7,
+          "zone_starts": {
+            "offensive_faceoffs": 4,
+            "defensive_faceoffs": 2,
+            "percentage": "66.67"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Anthony",
+              "last": "Mantha"
+            },
+            "uniform": "39",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "741457-84x74.png",
+                "84x74": "741457-84x74.png",
+                "300x300": "741457-300x300.png"
+              }
+            },
+            "slug": "nhl/player/741457/anthony-mantha",
+            "id": 741457,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 0,
+          "plus_minus": 0,
+          "penalty_minutes": 0,
+          "hits": 0,
+          "blocks": 0,
+          "shifts": 23,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 1,
+            "lost": 1
+          },
+          "turnovers": {
+            "giveaways": 1,
+            "takeaways": 2
+          },
+          "time_on_ice": {
+            "minutes": 18,
+            "seconds": 6
+          },
+          "power_play_time_on_ice": {
+            "minutes": 3,
+            "seconds": 2
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 15,
+            "seconds": 4
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "missed_shots": 1,
+          "corsi": 9,
+          "fenwick": 5,
+          "zone_starts": {
+            "offensive_faceoffs": 6,
+            "defensive_faceoffs": 4,
+            "percentage": "60.00"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Henrik",
+              "last": "Zetterberg"
+            },
+            "uniform": "40",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "172441-84x74.png",
+                "84x74": "172441-84x74.png",
+                "300x300": "172441-300x300.png"
+              }
+            },
+            "slug": "nhl/player/172441/henrik-zetterberg",
+            "id": 172441,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 2,
+          "plus_minus": 0,
+          "penalty_minutes": 0,
+          "hits": 1,
+          "blocks": 1,
+          "shifts": 24,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 4,
+            "lost": 8
+          },
+          "turnovers": {
+            "giveaways": 1,
+            "takeaways": 1
+          },
+          "time_on_ice": {
+            "minutes": 19,
+            "seconds": 28
+          },
+          "power_play_time_on_ice": {
+            "minutes": 3,
+            "seconds": 2
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 16
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 16,
+            "seconds": 10
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 2,
+              "shots": 1
+            },
+            {
+              "period": 3,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 0,
+          "corsi": 9,
+          "fenwick": 6,
+          "zone_starts": {
+            "offensive_faceoffs": 6,
+            "defensive_faceoffs": 4,
+            "percentage": "60.00"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Nick",
+              "last": "Jensen"
+            },
+            "uniform": "3",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "733469-84x74.png",
+                "84x74": "733469-84x74.png",
+                "300x300": "733469-300x300.png"
+              }
+            },
+            "slug": "nhl/player/733469/nick-jensen",
+            "id": 733469,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 2,
+          "plus_minus": 0,
+          "penalty_minutes": 0,
+          "hits": 0,
+          "blocks": 1,
+          "shifts": 34,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 1,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 2,
+            "takeaways": 2
+          },
+          "time_on_ice": {
+            "minutes": 22,
+            "seconds": 16
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 52
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 21,
+            "seconds": 24
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 2,
+              "shots": 1
+            },
+            {
+              "period": 3,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 1,
+          "corsi": 3,
+          "fenwick": -3,
+          "zone_starts": {
+            "offensive_faceoffs": 6,
+            "defensive_faceoffs": 3,
+            "percentage": "66.67"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Xavier",
+              "last": "Ouellet"
+            },
+            "uniform": "61",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "607598-84x74.png",
+                "84x74": "607598-84x74.png",
+                "300x300": "607598-300x300.png"
+              }
+            },
+            "slug": "nhl/player/607598/xavier-ouellet",
+            "id": 607598,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 2,
+          "plus_minus": 0,
+          "penalty_minutes": 0,
+          "hits": 2,
+          "blocks": 0,
+          "shifts": 19,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 1
+          },
+          "time_on_ice": {
+            "minutes": 13,
+            "seconds": 32
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 13,
+            "seconds": 32
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 2
+            }
+          ],
+          "missed_shots": 1,
+          "corsi": 8,
+          "fenwick": 8,
+          "zone_starts": {
+            "offensive_faceoffs": 8,
+            "defensive_faceoffs": 4,
+            "percentage": "66.67"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Niklas",
+              "last": "Kronwall"
+            },
+            "uniform": "55",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "184050-84x74.png",
+                "84x74": "184050-84x74.png",
+                "300x300": "184050-300x300.png"
+              }
+            },
+            "slug": "nhl/player/184050/niklas-kronwall",
+            "id": 184050,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 1,
+          "plus_minus": 0,
+          "penalty_minutes": 0,
+          "hits": 2,
+          "blocks": 0,
+          "shifts": 25,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 1,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 19,
+            "seconds": 21
+          },
+          "power_play_time_on_ice": {
+            "minutes": 3,
+            "seconds": 2
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 16,
+            "seconds": 19
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 1,
+          "corsi": 5,
+          "fenwick": 5,
+          "zone_starts": {
+            "offensive_faceoffs": 12,
+            "defensive_faceoffs": 5,
+            "percentage": "70.59"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Dylan",
+              "last": "Larkin"
+            },
+            "uniform": "71",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "831080-84x74.png",
+                "84x74": "831080-84x74.png",
+                "300x300": "831080-300x300.png"
+              }
+            },
+            "slug": "nhl/player/831080/dylan-larkin",
+            "id": 831080,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 7,
+          "plus_minus": 0,
+          "penalty_minutes": 2,
+          "hits": 1,
+          "blocks": 0,
+          "shifts": 25,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 1,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 7,
+            "lost": 9
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 2
+          },
+          "time_on_ice": {
+            "minutes": 18,
+            "seconds": 0
+          },
+          "power_play_time_on_ice": {
+            "minutes": 1,
+            "seconds": 58
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 40
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 15,
+            "seconds": 22
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 3
+            },
+            {
+              "period": 3,
+              "shots": 4
+            }
+          ],
+          "missed_shots": 0,
+          "corsi": -3,
+          "fenwick": -4,
+          "zone_starts": {
+            "offensive_faceoffs": 8,
+            "defensive_faceoffs": 3,
+            "percentage": "72.73"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Andreas",
+              "last": "Athanasiou"
+            },
+            "uniform": "72",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "681424-84x74.png",
+                "84x74": "681424-84x74.png",
+                "300x300": "681424-300x300.png"
+              }
+            },
+            "slug": "nhl/player/681424/andreas-athanasiou",
+            "id": 681424,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 3,
+          "plus_minus": 0,
+          "penalty_minutes": 0,
+          "hits": 2,
+          "blocks": 0,
+          "shifts": 20,
+          "goals": {
+            "total": 1,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 1,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 2,
+            "takeaways": 2
+          },
+          "time_on_ice": {
+            "minutes": 14,
+            "seconds": 18
+          },
+          "power_play_time_on_ice": {
+            "minutes": 1,
+            "seconds": 58
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 12,
+            "seconds": 20
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 1
+            },
+            {
+              "period": 2,
+              "shots": 1
+            },
+            {
+              "period": 3,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 0,
+          "corsi": -3,
+          "fenwick": -4,
+          "zone_starts": {
+            "offensive_faceoffs": 6,
+            "defensive_faceoffs": 3,
+            "percentage": "66.67"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Trevor",
+              "last": "Daley"
+            },
+            "uniform": "83",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "172243-84x74.png",
+                "84x74": "172243-84x74.png",
+                "300x300": "172243-300x300.png"
+              }
+            },
+            "slug": "nhl/player/172243/trevor-daley",
+            "id": 172243,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 1,
+          "plus_minus": 2,
+          "penalty_minutes": 0,
+          "hits": 0,
+          "blocks": 3,
+          "shifts": 41,
+          "goals": {
+            "total": 1,
+            "empty_net": 0,
+            "game_winning": 1,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 23,
+            "seconds": 15
+          },
+          "power_play_time_on_ice": {
+            "minutes": 2,
+            "seconds": 14
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 2,
+            "seconds": 4
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 18,
+            "seconds": 57
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 0,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 1,
+          "corsi": -16,
+          "fenwick": -12,
+          "zone_starts": {
+            "offensive_faceoffs": 6,
+            "defensive_faceoffs": 15,
+            "percentage": "28.57"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Gustav",
+              "last": "Nyquist"
+            },
+            "uniform": "14",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "593067-84x74.png",
+                "84x74": "593067-84x74.png",
+                "300x300": "593067-300x300.png"
+              }
+            },
+            "slug": "nhl/player/593067/gustav-nyquist",
+            "id": 593067,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 2,
+          "plus_minus": 0,
+          "penalty_minutes": 0,
+          "hits": 0,
+          "blocks": 0,
+          "shifts": 23,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 3,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 20,
+            "seconds": 0
+          },
+          "power_play_time_on_ice": {
+            "minutes": 3,
+            "seconds": 2
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 16
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 16,
+            "seconds": 42
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 1
+            },
+            {
+              "period": 2,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 2,
+          "corsi": 8,
+          "fenwick": 5,
+          "zone_starts": {
+            "offensive_faceoffs": 7,
+            "defensive_faceoffs": 4,
+            "percentage": "63.64"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Luke",
+              "last": "Glendening"
+            },
+            "uniform": "41",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "656728-84x74.png",
+                "84x74": "656728-84x74.png",
+                "300x300": "656728-300x300.png"
+              }
+            },
+            "slug": "nhl/player/656728/luke-glendening",
+            "id": 656728,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 0,
+          "plus_minus": 0,
+          "penalty_minutes": 0,
+          "hits": 2,
+          "blocks": 4,
+          "shifts": 22,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 7,
+            "lost": 4
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 15,
+            "seconds": 1
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 1,
+            "seconds": 51
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 13,
+            "seconds": 10
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "missed_shots": 0,
+          "corsi": -4,
+          "fenwick": -1,
+          "zone_starts": {
+            "offensive_faceoffs": 7,
+            "defensive_faceoffs": 7,
+            "percentage": "50.00"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Jonathan",
+              "last": "Ericsson"
+            },
+            "uniform": "52",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "326026-84x74.png",
+                "84x74": "326026-84x74.png",
+                "300x300": "326026-300x300.png"
+              }
+            },
+            "slug": "nhl/player/326026/jonathan-ericsson",
+            "id": 326026,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 2,
+          "plus_minus": 1,
+          "penalty_minutes": 0,
+          "hits": 0,
+          "blocks": 0,
+          "shifts": 33,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 1,
+            "takeaways": 1
+          },
+          "time_on_ice": {
+            "minutes": 17,
+            "seconds": 39
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 2,
+            "seconds": 4
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 15,
+            "seconds": 35
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 1
+            },
+            {
+              "period": 2,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 0,
+          "corsi": -14,
+          "fenwick": -9,
+          "zone_starts": {
+            "offensive_faceoffs": 4,
+            "defensive_faceoffs": 11,
+            "percentage": "26.67"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Tyler",
+              "last": "Bertuzzi"
+            },
+            "uniform": "59",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "743067-84x74.png",
+                "84x74": "743067-84x74.png",
+                "300x300": "743067-300x300.png"
+              }
+            },
+            "slug": "nhl/player/743067/tyler-bertuzzi",
+            "id": 743067,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 1,
+          "plus_minus": 0,
+          "penalty_minutes": 0,
+          "hits": 1,
+          "blocks": 1,
+          "shifts": 17,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 10,
+            "seconds": 43
+          },
+          "power_play_time_on_ice": {
+            "minutes": 1,
+            "seconds": 58
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 8,
+            "seconds": 45
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 2,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 1,
+          "corsi": -13,
+          "fenwick": -7,
+          "zone_starts": {
+            "offensive_faceoffs": 6,
+            "defensive_faceoffs": 2,
+            "percentage": "75.00"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Justin",
+              "last": "Abdelkader"
+            },
+            "uniform": "8",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "447451-84x74.png",
+                "84x74": "447451-84x74.png",
+                "300x300": "447451-300x300.png"
+              }
+            },
+            "slug": "nhl/player/447451/justin-abdelkader",
+            "id": 447451,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 1,
+          "plus_minus": 1,
+          "penalty_minutes": 0,
+          "hits": 1,
+          "blocks": 0,
+          "shifts": 25,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 1,
+            "lost": 2
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 15,
+            "seconds": 11
+          },
+          "power_play_time_on_ice": {
+            "minutes": 1,
+            "seconds": 58
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 1,
+            "seconds": 22
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 11,
+            "seconds": 51
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 2,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 0,
+          "corsi": -5,
+          "fenwick": -4,
+          "zone_starts": {
+            "offensive_faceoffs": 5,
+            "defensive_faceoffs": 11,
+            "percentage": "31.25"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Danny",
+              "last": "DeKeyser"
+            },
+            "uniform": "65",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "729484-84x74.png",
+                "84x74": "729484-84x74.png",
+                "300x300": "729484-300x300.png"
+              }
+            },
+            "slug": "nhl/player/729484/danny-dekeyser",
+            "id": 729484,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 1,
+          "plus_minus": 0,
+          "penalty_minutes": 0,
+          "hits": 2,
+          "blocks": 2,
+          "shifts": 36,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 23,
+            "seconds": 41
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 52
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 22,
+            "seconds": 49
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 2,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 0,
+          "corsi": 0,
+          "fenwick": -5,
+          "zone_starts": {
+            "offensive_faceoffs": 6,
+            "defensive_faceoffs": 7,
+            "percentage": "46.15"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Tomas",
+              "last": "Tatar"
+            },
+            "uniform": "21",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "522267-84x74.png",
+                "84x74": "522267-84x74.png",
+                "300x300": "522267-300x300.png"
+              }
+            },
+            "slug": "nhl/player/522267/tomas-tatar",
+            "id": 522267,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 3,
+          "plus_minus": 1,
+          "penalty_minutes": 0,
+          "hits": 0,
+          "blocks": 1,
+          "shifts": 26,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 1,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 1,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 1
+          },
+          "time_on_ice": {
+            "minutes": 15,
+            "seconds": 55
+          },
+          "power_play_time_on_ice": {
+            "minutes": 2,
+            "seconds": 46
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 13,
+            "seconds": 9
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 1
+            },
+            {
+              "period": 2,
+              "shots": 1
+            },
+            {
+              "period": 3,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 1,
+          "corsi": 7,
+          "fenwick": 3,
+          "zone_starts": {
+            "offensive_faceoffs": 8,
+            "defensive_faceoffs": 3,
+            "percentage": "72.73"
+          }
+        }
+      ],
+      "player_goaltender_stats": [
+        {
+          "player": {
+            "name": {
+              "first": "Jimmy",
+              "last": "Howard"
+            },
+            "uniform": "35",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "298149-84x74.png",
+                "84x74": "298149-84x74.png",
+                "300x300": "298149-300x300.png"
+              }
+            },
+            "slug": "nhl/player/298149/jimmy-howard",
+            "id": 298149,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "is_game_started": true,
+          "is_losing_goaltender": false,
+          "is_winning_goaltender": true,
+          "is_o_t_loss_goaltender": false,
+          "is_shutout": false,
+          "shots_against": 38,
+          "saves": 36,
+          "goals_against": {
+            "total_against": 2,
+            "empty_net_against": 0
+          },
+          "cumulative_record": {
+            "wins": 18,
+            "losses": 19,
+            "overtime_losses": 7
+          },
+          "time_played": {
+            "minutes": 64,
+            "seconds": 54
+          },
+          "stint_details": [
+            {
+              "goaltender_sequence": 1,
+              "period_entered": 1,
+              "time_entered": {
+                "minutes": 0,
+                "seconds": 0
+              }
+            }
+          ]
+        }
+      ],
+      "team_stats": {
+        "assists": 4,
+        "shots_on_goal": 34,
+        "penalties": 2,
+        "penalty_minutes": 4,
+        "giveaways": 13,
+        "blocks": 17,
+        "power_play": {
+          "goals": 0,
+          "opportunities": 3
+        },
+        "penalty_shots": {
+          "goals": 0,
+          "shots": 0
+        }
+      }
+    },
+    {
+      "team_id": 4966,
+      "player_skater_stats": [
+        {
+          "player": {
+            "name": {
+              "first": "Brady",
+              "last": "Skjei"
+            },
+            "uniform": "76",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "659874-84x74.png",
+                "84x74": "659874-84x74.png",
+                "300x300": "659874-300x300.png"
+              }
+            },
+            "slug": "nhl/player/659874/brady-skjei",
+            "id": 659874,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 3,
+          "plus_minus": -2,
+          "penalty_minutes": 0,
+          "hits": 0,
+          "blocks": 0,
+          "shifts": 29,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 1,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 24,
+            "seconds": 24
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 59
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 2,
+            "seconds": 45
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 20,
+            "seconds": 40
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 2
+            },
+            {
+              "period": 3,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 1,
+          "corsi": 15,
+          "fenwick": 11,
+          "zone_starts": {
+            "offensive_faceoffs": 9,
+            "defensive_faceoffs": 9,
+            "percentage": "50.00"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Neal",
+              "last": "Pionk"
+            },
+            "uniform": "44",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "1050025-84x74.png",
+                "84x74": "1050025-84x74.png",
+                "300x300": "1050025-300x300.png"
+              }
+            },
+            "slug": "nhl/player/1050025/neal-pionk",
+            "id": 1050025,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 0,
+          "plus_minus": 1,
+          "penalty_minutes": 0,
+          "hits": 1,
+          "blocks": 1,
+          "shifts": 30,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 2,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 19,
+            "seconds": 19
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 2,
+            "seconds": 45
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 16,
+            "seconds": 34
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "missed_shots": 0,
+          "corsi": -8,
+          "fenwick": -6,
+          "zone_starts": {
+            "offensive_faceoffs": 4,
+            "defensive_faceoffs": 14,
+            "percentage": "22.22"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "J.T.",
+              "last": "Miller"
+            },
+            "uniform": "10",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "600111-84x74.png",
+                "84x74": "600111-84x74.png",
+                "300x300": "600111-300x300.png"
+              }
+            },
+            "slug": "nhl/player/600111/jt-miller",
+            "id": 600111,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 3,
+          "plus_minus": -1,
+          "penalty_minutes": 0,
+          "hits": 1,
+          "blocks": 1,
+          "shifts": 23,
+          "goals": {
+            "total": 1,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 1,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 9,
+            "lost": 13
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 18,
+            "seconds": 38
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 47
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 17,
+            "seconds": 51
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 2,
+              "shots": 2
+            },
+            {
+              "period": 3,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 2,
+          "corsi": 1,
+          "fenwick": 2,
+          "zone_starts": {
+            "offensive_faceoffs": 6,
+            "defensive_faceoffs": 10,
+            "percentage": "37.50"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Chris",
+              "last": "Kreider"
+            },
+            "uniform": "20",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "504299-84x74.png",
+                "84x74": "504299-84x74.png",
+                "300x300": "504299-300x300.png"
+              }
+            },
+            "slug": "nhl/player/504299/chris-kreider",
+            "id": 504299,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 5,
+          "plus_minus": -1,
+          "penalty_minutes": 0,
+          "hits": 2,
+          "blocks": 0,
+          "shifts": 25,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 17,
+            "seconds": 18
+          },
+          "power_play_time_on_ice": {
+            "minutes": 1,
+            "seconds": 58
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 15,
+            "seconds": 20
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 1
+            },
+            {
+              "period": 2,
+              "shots": 2
+            },
+            {
+              "period": 3,
+              "shots": 2
+            }
+          ],
+          "missed_shots": 6,
+          "corsi": 14,
+          "fenwick": 13,
+          "zone_starts": {
+            "offensive_faceoffs": 9,
+            "defensive_faceoffs": 2,
+            "percentage": "81.82"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Jesper",
+              "last": "Fast"
+            },
+            "uniform": "17",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "555872-84x74.png",
+                "84x74": "555872-84x74.png",
+                "300x300": "555872-300x300.png"
+              }
+            },
+            "slug": "nhl/player/555872/jesper-fast",
+            "id": 555872,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 1,
+          "plus_minus": 1,
+          "penalty_minutes": 2,
+          "hits": 2,
+          "blocks": 0,
+          "shifts": 22,
+          "goals": {
+            "total": 1,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 1
+          },
+          "time_on_ice": {
+            "minutes": 17,
+            "seconds": 51
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 1,
+            "seconds": 54
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 15,
+            "seconds": 57
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 3,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 0,
+          "corsi": -13,
+          "fenwick": -9,
+          "zone_starts": {
+            "offensive_faceoffs": 5,
+            "defensive_faceoffs": 10,
+            "percentage": "33.33"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Ryan",
+              "last": "Spooner"
+            },
+            "uniform": "23",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "554492-84x74.png",
+                "84x74": "554492-84x74.png",
+                "300x300": "554492-300x300.png"
+              }
+            },
+            "slug": "nhl/player/554492/ryan-spooner",
+            "id": 554492,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 2,
+          "plus_minus": 1,
+          "penalty_minutes": 0,
+          "hits": 2,
+          "blocks": 1,
+          "shifts": 21,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 2,
+            "power_play": 1,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 1
+          },
+          "turnovers": {
+            "giveaways": 1,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 16,
+            "seconds": 31
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 54
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 15,
+            "seconds": 37
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 1
+            },
+            {
+              "period": 3,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 2,
+          "corsi": -8,
+          "fenwick": -4,
+          "zone_starts": {
+            "offensive_faceoffs": 5,
+            "defensive_faceoffs": 6,
+            "percentage": "45.45"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Tony",
+              "last": "DeAngelo"
+            },
+            "uniform": "77",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "831084-84x74.png",
+                "84x74": "831084-84x74.png",
+                "300x300": "831084-300x300.png"
+              }
+            },
+            "slug": "nhl/player/831084/anthony-deangelo",
+            "id": 831084,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 0,
+          "plus_minus": -1,
+          "penalty_minutes": 0,
+          "hits": 0,
+          "blocks": 4,
+          "shifts": 24,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 1,
+            "power_play": 1,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 1,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 20,
+            "seconds": 22
+          },
+          "power_play_time_on_ice": {
+            "minutes": 1,
+            "seconds": 47
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 18,
+            "seconds": 35
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "missed_shots": 0,
+          "corsi": -4,
+          "fenwick": 0,
+          "zone_starts": {
+            "offensive_faceoffs": 9,
+            "defensive_faceoffs": 2,
+            "percentage": "81.82"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "David",
+              "last": "Desharnais"
+            },
+            "uniform": "51",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "451706-84x74.png",
+                "84x74": "451706-84x74.png",
+                "300x300": "451706-300x300.png"
+              }
+            },
+            "slug": "nhl/player/451706/david-desharnais",
+            "id": 451706,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 0,
+          "plus_minus": 0,
+          "penalty_minutes": 2,
+          "hits": 0,
+          "blocks": 1,
+          "shifts": 11,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 5,
+            "lost": 1
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 1
+          },
+          "time_on_ice": {
+            "minutes": 8,
+            "seconds": 45
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 7
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 8,
+            "seconds": 38
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "missed_shots": 0,
+          "corsi": -2,
+          "fenwick": -3,
+          "zone_starts": {
+            "offensive_faceoffs": 2,
+            "defensive_faceoffs": 3,
+            "percentage": "40.00"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Vinni",
+              "last": "Lettieri"
+            },
+            "uniform": "95",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "976670-84x74.png",
+                "84x74": "976670-84x74.png",
+                "300x300": "976670-300x300.png"
+              }
+            },
+            "slug": "nhl/player/976670/vinni-lettieri",
+            "id": 976670,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 1,
+          "plus_minus": 0,
+          "penalty_minutes": 0,
+          "hits": 0,
+          "blocks": 1,
+          "shifts": 9,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 6,
+            "seconds": 44
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 6,
+            "seconds": 44
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 0,
+          "corsi": -1,
+          "fenwick": -3,
+          "zone_starts": {
+            "offensive_faceoffs": 2,
+            "defensive_faceoffs": 1,
+            "percentage": "66.67"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Kevin",
+              "last": "Hayes"
+            },
+            "uniform": "13",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "550774-84x74.png",
+                "84x74": "550774-84x74.png",
+                "300x300": "550774-300x300.png"
+              }
+            },
+            "slug": "nhl/player/550774/kevin-hayes",
+            "id": 550774,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 4,
+          "plus_minus": 1,
+          "penalty_minutes": 0,
+          "hits": 0,
+          "blocks": 0,
+          "shifts": 22,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 1,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 11,
+            "lost": 7
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 18,
+            "seconds": 49
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 58
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 2,
+            "seconds": 55
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 14,
+            "seconds": 56
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 2
+            },
+            {
+              "period": 3,
+              "shots": 2
+            }
+          ],
+          "missed_shots": 1,
+          "corsi": -7,
+          "fenwick": -6,
+          "zone_starts": {
+            "offensive_faceoffs": 5,
+            "defensive_faceoffs": 8,
+            "percentage": "38.46"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Mika",
+              "last": "Zibanejad"
+            },
+            "uniform": "93",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "600082-84x74.png",
+                "84x74": "600082-84x74.png",
+                "300x300": "600082-300x300.png"
+              }
+            },
+            "slug": "nhl/player/600082/mika-zibanejad",
+            "id": 600082,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 4,
+          "plus_minus": -2,
+          "penalty_minutes": 0,
+          "hits": 3,
+          "blocks": 1,
+          "shifts": 26,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 11,
+            "lost": 8
+          },
+          "turnovers": {
+            "giveaways": 3,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 18,
+            "seconds": 48
+          },
+          "power_play_time_on_ice": {
+            "minutes": 1,
+            "seconds": 58
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 2,
+            "seconds": 5
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 14,
+            "seconds": 45
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 2
+            },
+            {
+              "period": 3,
+              "shots": 2
+            }
+          ],
+          "missed_shots": 4,
+          "corsi": 14,
+          "fenwick": 14,
+          "zone_starts": {
+            "offensive_faceoffs": 10,
+            "defensive_faceoffs": 2,
+            "percentage": "83.33"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Paul",
+              "last": "Carey"
+            },
+            "uniform": "28",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "654386-84x74.png",
+                "84x74": "654386-84x74.png",
+                "300x300": "654386-300x300.png"
+              }
+            },
+            "slug": "nhl/player/654386/paul-carey",
+            "id": 654386,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 2,
+          "plus_minus": 0,
+          "penalty_minutes": 0,
+          "hits": 2,
+          "blocks": 0,
+          "shifts": 10,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 1
+          },
+          "turnovers": {
+            "giveaways": 1,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 8,
+            "seconds": 10
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 51
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 7,
+            "seconds": 19
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 1
+            },
+            {
+              "period": 2,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 0,
+          "corsi": 0,
+          "fenwick": -4,
+          "zone_starts": {
+            "offensive_faceoffs": 2,
+            "defensive_faceoffs": 2,
+            "percentage": "50.00"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "John",
+              "last": "Gilmour"
+            },
+            "uniform": "58",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "745348-84x74.png",
+                "84x74": "745348-84x74.png",
+                "300x300": "745348-300x300.png"
+              }
+            },
+            "slug": "nhl/player/745348/john-gilmour",
+            "id": 745348,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 2,
+          "plus_minus": -1,
+          "penalty_minutes": 2,
+          "hits": 0,
+          "blocks": 1,
+          "shifts": 27,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 3,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 21,
+            "seconds": 11
+          },
+          "power_play_time_on_ice": {
+            "minutes": 1,
+            "seconds": 13
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 19,
+            "seconds": 58
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 1
+            },
+            {
+              "period": 3,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 1,
+          "corsi": 21,
+          "fenwick": 15,
+          "zone_starts": {
+            "offensive_faceoffs": 10,
+            "defensive_faceoffs": 6,
+            "percentage": "62.50"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Mats",
+              "last": "Zuccarello"
+            },
+            "uniform": "36",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "547287-84x74.png",
+                "84x74": "547287-84x74.png",
+                "300x300": "547287-300x300.png"
+              }
+            },
+            "slug": "nhl/player/547287/mats-zuccarello",
+            "id": 547287,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 2,
+          "plus_minus": -2,
+          "penalty_minutes": 0,
+          "hits": 0,
+          "blocks": 2,
+          "shifts": 24,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 21,
+            "seconds": 30
+          },
+          "power_play_time_on_ice": {
+            "minutes": 2,
+            "seconds": 2
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 2,
+            "seconds": 15
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 17,
+            "seconds": 13
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 3,
+              "shots": 2
+            }
+          ],
+          "missed_shots": 1,
+          "corsi": 7,
+          "fenwick": 8,
+          "zone_starts": {
+            "offensive_faceoffs": 6,
+            "defensive_faceoffs": 10,
+            "percentage": "37.50"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Marc",
+              "last": "Staal"
+            },
+            "uniform": "18",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "300790-84x74.png",
+                "84x74": "300790-84x74.png",
+                "300x300": "300790-300x300.png"
+              }
+            },
+            "slug": "nhl/player/300790/marc-staal",
+            "id": 300790,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 1,
+          "plus_minus": 1,
+          "penalty_minutes": 0,
+          "hits": 1,
+          "blocks": 1,
+          "shifts": 28,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 18,
+            "seconds": 7
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 1
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 2,
+            "seconds": 15
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 15,
+            "seconds": 51
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 3,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 0,
+          "corsi": -6,
+          "fenwick": -5,
+          "zone_starts": {
+            "offensive_faceoffs": 3,
+            "defensive_faceoffs": 12,
+            "percentage": "20.00"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Rob",
+              "last": "O'Gara"
+            },
+            "uniform": "46",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "610901-84x74.png",
+                "84x74": "610901-84x74.png",
+                "300x300": "610901-300x300.png"
+              }
+            },
+            "slug": "nhl/player/610901/rob-ogara",
+            "id": 610901,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 1,
+          "plus_minus": -1,
+          "penalty_minutes": 0,
+          "hits": 1,
+          "blocks": 1,
+          "shifts": 23,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 2
+          },
+          "time_on_ice": {
+            "minutes": 19,
+            "seconds": 54
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 2,
+            "seconds": 15
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 17,
+            "seconds": 39
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 2,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 0,
+          "corsi": -7,
+          "fenwick": -2,
+          "zone_starts": {
+            "offensive_faceoffs": 9,
+            "defensive_faceoffs": 3,
+            "percentage": "75.00"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Henrik",
+              "last": "Lundqvist"
+            },
+            "uniform": "30",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "184061-84x74.png",
+                "84x74": "184061-84x74.png",
+                "300x300": "184061-300x300.png"
+              }
+            },
+            "slug": "nhl/player/184061/henrik-lundqvist",
+            "id": 184061,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 0,
+          "plus_minus": 0,
+          "penalty_minutes": 0,
+          "hits": 0,
+          "blocks": 0,
+          "shifts": 0,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 1,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 64,
+            "seconds": 51
+          },
+          "power_play_time_on_ice": {
+            "minutes": 2,
+            "seconds": 56
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 5,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 56,
+            "seconds": 55
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "missed_shots": 0
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Jimmy",
+              "last": "Vesey"
+            },
+            "uniform": "26",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "680617-84x74.png",
+                "84x74": "680617-84x74.png",
+                "300x300": "680617-300x300.png"
+              }
+            },
+            "slug": "nhl/player/680617/jimmy-vesey",
+            "id": 680617,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 3,
+          "plus_minus": -1,
+          "penalty_minutes": 0,
+          "hits": 0,
+          "blocks": 0,
+          "shifts": 21,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 0
+          },
+          "turnovers": {
+            "giveaways": 1,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 16,
+            "seconds": 4
+          },
+          "power_play_time_on_ice": {
+            "minutes": 0,
+            "seconds": 47
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 15,
+            "seconds": 17
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 1,
+              "shots": 2
+            },
+            {
+              "period": 3,
+              "shots": 1
+            }
+          ],
+          "missed_shots": 1,
+          "corsi": 3,
+          "fenwick": 4,
+          "zone_starts": {
+            "offensive_faceoffs": 6,
+            "defensive_faceoffs": 10,
+            "percentage": "37.50"
+          }
+        },
+        {
+          "player": {
+            "name": {
+              "first": "Pavel",
+              "last": "Buchnevich"
+            },
+            "uniform": "89",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "743252-84x74.png",
+                "84x74": "743252-84x74.png",
+                "300x300": "743252-300x300.png"
+              }
+            },
+            "slug": "nhl/player/743252/pavel-buchnevich",
+            "id": 743252,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "shots_on_goal": 4,
+          "plus_minus": -1,
+          "penalty_minutes": 0,
+          "hits": 2,
+          "blocks": 0,
+          "shifts": 25,
+          "goals": {
+            "total": 0,
+            "empty_net": 0,
+            "game_winning": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "assists": {
+            "total": 0,
+            "power_play": 0,
+            "short_handed": 0
+          },
+          "faceoffs": {
+            "won": 0,
+            "lost": 1
+          },
+          "turnovers": {
+            "giveaways": 0,
+            "takeaways": 0
+          },
+          "time_on_ice": {
+            "minutes": 16,
+            "seconds": 20
+          },
+          "power_play_time_on_ice": {
+            "minutes": 1,
+            "seconds": 9
+          },
+          "short_handed_time_on_ice": {
+            "minutes": 0,
+            "seconds": 0
+          },
+          "even_strength_time_on_ice": {
+            "minutes": 15,
+            "seconds": 11
+          },
+          "shootout": {
+            "goals": 0,
+            "attempts": 0
+          },
+          "period_shots": [
+            {
+              "period": 3,
+              "shots": 4
+            }
+          ],
+          "missed_shots": 1,
+          "corsi": 11,
+          "fenwick": 10,
+          "zone_starts": {
+            "offensive_faceoffs": 10,
+            "defensive_faceoffs": 1,
+            "percentage": "90.91"
+          }
+        }
+      ],
+      "player_goaltender_stats": [
+        {
+          "player": {
+            "name": {
+              "first": "Henrik",
+              "last": "Lundqvist"
+            },
+            "uniform": "30",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/hockey/nhl/players/",
+              "cuts": {
+                "default": "184061-84x74.png",
+                "84x74": "184061-84x74.png",
+                "300x300": "184061-300x300.png"
+              }
+            },
+            "slug": "nhl/player/184061/henrik-lundqvist",
+            "id": 184061,
+            "league": {
+              "name": "National Hockey League",
+              "abbreviation": "NHL"
+            }
+          },
+          "is_game_started": true,
+          "is_losing_goaltender": false,
+          "is_winning_goaltender": false,
+          "is_o_t_loss_goaltender": true,
+          "is_shutout": false,
+          "shots_against": 34,
+          "saves": 31,
+          "goals_against": {
+            "total_against": 3,
+            "empty_net_against": 0
+          },
+          "cumulative_record": {
+            "wins": 23,
+            "losses": 21,
+            "overtime_losses": 5
+          },
+          "time_played": {
+            "minutes": 64,
+            "seconds": 51
+          },
+          "stint_details": [
+            {
+              "goaltender_sequence": 1,
+              "period_entered": 1,
+              "time_entered": {
+                "minutes": 0,
+                "seconds": 0
+              }
+            }
+          ]
+        }
+      ],
+      "team_stats": {
+        "assists": 4,
+        "shots_on_goal": 38,
+        "penalties": 3,
+        "penalty_minutes": 6,
+        "giveaways": 14,
+        "blocks": 15,
+        "power_play": {
+          "goals": 1,
+          "opportunities": 2
+        },
+        "penalty_shots": {
+          "goals": 0,
+          "shots": 0
+        }
+      }
+    }
+  ],
+  "editorial": {
+    "has_preview": true,
+    "has_recap": true,
+    "has_bullets": true,
+    "has_odds": true
+  }
+}

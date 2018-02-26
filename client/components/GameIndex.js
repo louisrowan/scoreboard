@@ -45,6 +45,7 @@ class GameIndex extends React.Component {
         this.handleDivisionConferenceButtonClick = this.handleDivisionConferenceButtonClick.bind(this);
         this.handleChildStatusUpdate = this.handleChildStatusUpdate.bind(this);
         this.filteredGames = this.filteredGames.bind(this);
+        this.handleLeagueClick = this.handleLeagueClick.bind(this);
     };
 
     componentWillMount () {
@@ -87,7 +88,7 @@ class GameIndex extends React.Component {
     handleChildClick (id) {
 
         if (this.state.activeGame === id) {
-            // this.setState({ activeGame: null })
+            this.setState({ activeGame: null })
         }
         else {
             this.setState({ activeGame: id })
@@ -263,6 +264,16 @@ class GameIndex extends React.Component {
     }
 
 
+    handleLeagueClick (league) {
+
+        this.setState({
+            activeLeague: league,
+            divisions: {},
+            conferences: {}
+        });
+    }
+
+
     render () {
 
         const {
@@ -271,7 +282,7 @@ class GameIndex extends React.Component {
             activeLeague,
             divisions,
             conferences
-        } = this.state
+        } = this.state;
 
         const header = leagues ?
         <Segment>
@@ -279,7 +290,7 @@ class GameIndex extends React.Component {
 
                 return <Button
                             key={league}
-                            onClick={() => this.setState({ activeLeague: league })}>
+                            onClick={() => this.handleLeagueClick(league)}>
                             {league}
                             </Button>
             })}

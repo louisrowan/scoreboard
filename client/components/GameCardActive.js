@@ -17,10 +17,10 @@ class GameCardActive extends React.Component {
         return (
             <span>
                 <h1>active game</h1>
-                <p>{game.teams[0].name}: {game.teams[0].score}</p>
-                <p>{game.teams[1].name}: {game.teams[1].score}</p>
-                <TeamBoxScore team={game.teams[0]} />
-                <TeamBoxScore team={game.teams[1]} />
+                <p>{game.teams[0].title}: {game.teams[0].score}</p>
+                <p>{game.teams[1].title}: {game.teams[1].score}</p>
+                {/*<TeamBoxScore team={game.teams[0]} />
+                <TeamBoxScore team={game.teams[1]} />*/}
             </span>
         )
     };

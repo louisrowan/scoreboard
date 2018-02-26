@@ -15,8 +15,6 @@ ApiRoutes.get('/gameids', (req, res) => {
             res.send({});
         }
 
-        console.log(result);
-
         res.send(result);
     });
 });

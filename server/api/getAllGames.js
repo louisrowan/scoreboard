@@ -30,8 +30,6 @@ module.exports = (next) => {
     const formattedDate = `${year}-${month}-${day}`;
     const url = `http://stats.api.si.com/v1/all_sports/calendar?start_date=${formattedDate}&end_date=${formattedDate}`;
 
-    console.log(url);
-
     Http.get(url, (res) => {
 
         let raw = '';

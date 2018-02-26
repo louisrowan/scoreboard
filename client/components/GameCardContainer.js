@@ -29,7 +29,7 @@ class GameCardContainer extends React.Component {
     shouldComponentUpdate (nextProps) {
 
         if (this.state.renderData) {
-            return false;
+            // return false;
         }
         return true;
     }
@@ -44,9 +44,9 @@ class GameCardContainer extends React.Component {
         Axios.get(url)
             .then(res => {
 
-                return res.data
-            })
-            .then(data => {
+                if (res.status !== 200) console.log('bad request for', url);
+
+                const data = res.data;
 
                 this.setState({ data, renderData: true });
                 this.categorizeGame(data);
@@ -65,8 +65,8 @@ class GameCardContainer extends React.Component {
 
         data.teams.forEach((team) => {
 
-            divisions.push(team.division);
-            conferences.push(team.conference);
+            if (team.division) divisions.push(team.division);
+            if (team.conference) conferences.push(team.conference);
         })
 
         this.props.sendInfoToParent({
@@ -80,7 +80,7 @@ class GameCardContainer extends React.Component {
     render () {
 
         const {
-            game,
+            id,
             sendClickToParent,
             activeGame
         } = this.props;
@@ -95,7 +95,7 @@ class GameCardContainer extends React.Component {
             : '';
 
         return (
-            <List.Item onClick={() => sendClickToParent(game.id)}>
+            <List.Item onClick={() => sendClickToParent(id)}>
                 {content}
             </List.Item>
         )

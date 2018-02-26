@@ -4,6 +4,7 @@ const React = require('react');
 
 const {
     Grid,
+    Image,
     Segment
 } = require('semantic-ui-react');
 
@@ -42,13 +43,14 @@ class GameCardInactive extends React.Component {
 
 
         return (
-            <Segment inverted={inverted} color={color}>
-                <Grid columns={3}>
+            <Segment color={color}>
+                <Grid columns={4}>
                     <Grid.Row>
                         <Grid.Column>
                             {active ? `${status.period} ${status.unit}`: status.name}
                         </Grid.Column>
                         <Grid.Column>
+                            <Image avatar src={`${team1.logos.base}${team1.logos._50x50}`} />
                             {team1.title}
                         </Grid.Column>
                         <Grid.Column>
@@ -60,6 +62,7 @@ class GameCardInactive extends React.Component {
                             {time}
                         </Grid.Column>
                         <Grid.Column>
+                            <Image avatar src={`${team2.logos.base}${team2.logos._50x50}`} />
                             {team2.title}
                         </Grid.Column>
                         <Grid.Column>

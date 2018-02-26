@@ -1,0 +1,2788 @@
+{
+  "id": 1913253,
+  "league": {
+    "name": "English Premier League",
+    "abbreviation": "EPL"
+  },
+  "start": {
+    "local": "2018-02-25T12:00:00",
+    "utc": "2018-02-25T12:00:00",
+    "epoch": 1519560000
+  },
+  "tv": "NBCS",
+  "tv_stations": [
+    {
+      "tv_station_id": 26,
+      "name": "NBC Sports Network",
+      "call_letters": "NBCS",
+      "network_type": {
+        "network_type_id": 1,
+        "name": "National"
+      },
+      "country": {
+        "country_id": 1,
+        "name": "United States",
+        "abbreviation": "USA"
+      }
+    },
+    {
+      "tv_station_id": 27,
+      "name": "NBC Universo",
+      "call_letters": "NBCU",
+      "network_type": {
+        "network_type_id": 1,
+        "name": "National"
+      },
+      "country": {
+        "country_id": 1,
+        "name": "United States",
+        "abbreviation": "USA"
+      }
+    },
+    {
+      "tv_station_id": 13,
+      "name": "Movistar Fútbol",
+      "call_letters": "MvF",
+      "network_type": {
+        "network_type_id": 1,
+        "name": "National"
+      },
+      "country": {
+        "country_id": 39,
+        "name": "Spain",
+        "abbreviation": "ESP"
+      }
+    }
+  ],
+  "watch": {
+    "name": "Fubo",
+    "text": "Watch Live on",
+    "url": "https://www.fubo.tv/watch/English-Premier-League?irmp=376635&utm_source=Aff&utm_medium=SI&utm_campaign=EPL",
+    "tracking": {
+      "Scoreboard": "&utm_term=Scoreboard&irad=360511",
+      "Schedule": "&utm_term=Schedule&irad=360690"
+    },
+    "logo": {
+      "base": "https://cdn-s3.si.com/s3fs-public/logos/",
+      "cuts": {
+        "default": "fubo_40x14_orange.png",
+        "38x14": "fubo_38x14_orange.png",
+        "40x14": "fubo_40x14_orange.png",
+        "76x28": "fubo_76x28_orange.png",
+        "80x28": "fubo_80x28_orange.png"
+      }
+    },
+    "station": {
+      "tv_station_id": 26,
+      "name": "NBC Sports Network",
+      "call_letters": "NBCS",
+      "network_type": {
+        "network_type_id": 1,
+        "name": "National"
+      },
+      "country": {
+        "country_id": 1,
+        "name": "United States",
+        "abbreviation": "USA"
+      }
+    }
+  },
+  "venue": {
+    "name": "Selhurst Park",
+    "city": "London",
+    "country": {
+      "name": "England",
+      "abbreviation": "ENG"
+    }
+  },
+  "status": {
+    "period": {
+      "id": 2,
+      "name": "2nd",
+      "unit": "Half",
+      "full_name": "2nd"
+    },
+    "time": {},
+    "defendingXZeroTeamId": null,
+    "name": "Final",
+    "id": 4,
+    "is_active": false
+  },
+  "teams": [
+    {
+      "id": 7131,
+      "name": "Crystal Palace",
+      "abbreviation": "CRY",
+      "location": {
+        "name": "Crystal Palace",
+        "type": "home"
+      },
+      "title": "Crystal Palace",
+      "formation": "433",
+      "logo": {
+        "base": "https://cdn-s3.si.com/s3fs-public/teams/soccer/logos/",
+        "cuts": {
+          "default": "cry_50.png",
+          "50x50": "cry_50.png",
+          "100x100": "cry_100.png",
+          "100x100_light": "cry_100_stroke.png",
+          "360x360": "cry_360.png",
+          "250x250": "cry_250.png",
+          "150x150": "cry_150.png",
+          "40x40": "cry_40.png",
+          "40x40_light": "cry_40_stroke.png"
+        }
+      },
+      "color": {
+        "primary": "#06265D",
+        "secondary": "#C1132F"
+      },
+      "slug": "soccer/team/crystal-palace",
+      "record": {
+        "wins": 6,
+        "losses": 13,
+        "ties": 9,
+        "percentage": ".375",
+        "points": 27
+      },
+      "score": 0,
+      "shots": 5,
+      "shootout_goals": 0,
+      "is_winner": false,
+      "linescores": [
+        {
+          "period": {
+            "id": 1,
+            "name": "1st",
+            "unit": "Half",
+            "full_name": "1st"
+          },
+          "score": 0,
+          "shots": 5
+        },
+        {
+          "period": {
+            "id": 2,
+            "name": "2nd",
+            "unit": "Half",
+            "full_name": "2nd"
+          },
+          "score": 0,
+          "shots": 0
+        }
+      ],
+      "taxonomy": {
+        "teams": "soccer-crystal-palace",
+        "airship": [
+          {
+            "name": "Game Start",
+            "tag": "events::soccer-crystal-palace-1"
+          },
+          {
+            "name": "Half",
+            "tag": "events::soccer-crystal-palace-2"
+          },
+          {
+            "name": "Scoring Plays",
+            "tag": "events::soccer-crystal-palace-3"
+          },
+          {
+            "name": "Final",
+            "tag": "events::soccer-crystal-palace-4"
+          },
+          {
+            "name": "Team News",
+            "tag": "teams::soccer-crystal-palace"
+          }
+        ]
+      },
+      "leaders": {
+        "goals": {
+          "name": "goals",
+          "abbreviation": "G"
+        },
+        "saves": {
+          "name": "saves",
+          "abbreviation": "SV",
+          "value": 3,
+          "players": [
+            {
+              "name": {
+                "display": "Wayne Hennessey",
+                "last": "Hennessey"
+              },
+              "uniform": "13",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/soccer/epl/players/",
+                "cuts": {
+                  "default": "408145-84x74.png",
+                  "84x74": "408145-84x74.png",
+                  "300x300": "408145-300x300.png"
+                }
+              },
+              "id": 408145,
+              "league": {
+                "name": "English Premier League",
+                "abbreviation": "EPL"
+              }
+            }
+          ]
+        },
+        "assists": {
+          "name": "assists",
+          "abbreviation": "A"
+        }
+      }
+    },
+    {
+      "id": 6154,
+      "name": "Tottenham Hotspur",
+      "abbreviation": "TOT",
+      "location": {
+        "name": "Tottenham Hotspur",
+        "type": "away"
+      },
+      "title": "Tottenham Hotspur",
+      "formation": "4231",
+      "logo": {
+        "base": "https://cdn-s3.si.com/s3fs-public/teams/soccer/logos/",
+        "cuts": {
+          "default": "tot_50.png",
+          "50x50": "tot_50.png",
+          "100x100": "tot_100.png",
+          "100x100_light": "tot_100_stroke.png",
+          "360x360": "tot_360.png",
+          "250x250": "tot_250.png",
+          "150x150": "tot_150.png",
+          "40x40": "tot_40.png",
+          "40x40_light": "tot_40_stroke.png"
+        }
+      },
+      "color": {
+        "primary": "#FBFBFB",
+        "secondary": "#021E55"
+      },
+      "slug": "soccer/team/tottenham-hotspur",
+      "record": {
+        "wins": 16,
+        "losses": 5,
+        "ties": 7,
+        "percentage": ".696",
+        "points": 55
+      },
+      "score": 1,
+      "shots": 14,
+      "shootout_goals": 0,
+      "is_winner": true,
+      "linescores": [
+        {
+          "period": {
+            "id": 1,
+            "name": "1st",
+            "unit": "Half",
+            "full_name": "1st"
+          },
+          "score": 0,
+          "shots": 4
+        },
+        {
+          "period": {
+            "id": 2,
+            "name": "2nd",
+            "unit": "Half",
+            "full_name": "2nd"
+          },
+          "score": 1,
+          "shots": 10
+        }
+      ],
+      "taxonomy": {
+        "teams": "soccer-tottenham-hotspur",
+        "airship": [
+          {
+            "name": "Game Start",
+            "tag": "events::soccer-tottenham-hotspur-1"
+          },
+          {
+            "name": "Half",
+            "tag": "events::soccer-tottenham-hotspur-2"
+          },
+          {
+            "name": "Scoring Plays",
+            "tag": "events::soccer-tottenham-hotspur-3"
+          },
+          {
+            "name": "Final",
+            "tag": "events::soccer-tottenham-hotspur-4"
+          },
+          {
+            "name": "Team News",
+            "tag": "teams::soccer-tottenham-hotspur"
+          }
+        ]
+      },
+      "leaders": {
+        "goals": {
+          "name": "goals",
+          "abbreviation": "G",
+          "value": 1,
+          "players": [
+            {
+              "name": {
+                "display": "Harry Kane",
+                "last": "Kane"
+              },
+              "uniform": "10",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/soccer/epl/players/",
+                "cuts": {
+                  "default": "530004-84x74.png",
+                  "84x74": "530004-84x74.png",
+                  "300x300": "530004-300x300.png"
+                }
+              },
+              "id": 530004,
+              "league": {
+                "name": "English Premier League",
+                "abbreviation": "EPL"
+              }
+            }
+          ]
+        },
+        "saves": {
+          "name": "saves",
+          "abbreviation": "SV",
+          "value": 3,
+          "players": [
+            {
+              "name": {
+                "display": "Hugo Lloris",
+                "last": "Lloris"
+              },
+              "uniform": "1",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/soccer/epl/players/",
+                "cuts": {
+                  "default": "347765-84x74.png",
+                  "84x74": "347765-84x74.png",
+                  "300x300": "347765-300x300.png"
+                }
+              },
+              "id": 347765,
+              "league": {
+                "name": "English Premier League",
+                "abbreviation": "EPL"
+              }
+            }
+          ]
+        },
+        "assists": {
+          "name": "assists",
+          "abbreviation": "A",
+          "value": 1,
+          "players": [
+            {
+              "name": {
+                "display": "Christian Eriksen",
+                "last": "Eriksen"
+              },
+              "uniform": "23",
+              "image": {
+                "base": "https://cdn-s3.si.com/s3fs-public/teams/soccer/epl/players/",
+                "cuts": {
+                  "default": "537179-84x74.png",
+                  "84x74": "537179-84x74.png",
+                  "300x300": "537179-300x300.png"
+                }
+              },
+              "id": 537179,
+              "league": {
+                "name": "English Premier League",
+                "abbreviation": "EPL"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "alert_types": [
+    {
+      "name": "Game Start",
+      "airship": "events::1519516800-1913253-1"
+    },
+    {
+      "name": "Half",
+      "airship": "events::1519516800-1913253-2"
+    },
+    {
+      "name": "Scoring Play",
+      "airship": "events::1519516800-1913253-3"
+    },
+    {
+      "name": "Final",
+      "airship": "events::1519516800-1913253-4"
+    }
+  ],
+  "last_play": {
+    "period": {
+      "id": 2,
+      "name": "2nd",
+      "unit": "Half",
+      "full_name": "2nd"
+    },
+    "time": "90:07",
+    "text": "Game Over"
+  },
+  "scoring_summaries": [
+    {
+      "period": {
+        "id": 2,
+        "name": "2nd",
+        "unit": "Half",
+        "full_name": "2nd"
+      },
+      "goals": [
+        {
+          "time": "89:00",
+          "minute": 89,
+          "team_id": 6154,
+          "text": "Harry Kane scored a goal with a Header shot assisted by Christian Eriksen and celebrated by Dog Pile",
+          "current_score": {
+            "home": 0,
+            "away": 1
+          },
+          "player": {
+            "name": {
+              "last": "Kane",
+              "display": "Harry Kane"
+            },
+            "uniform": "10",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/soccer/epl/players/",
+              "cuts": {
+                "default": "530004-84x74.png",
+                "84x74": "530004-84x74.png",
+                "300x300": "530004-300x300.png"
+              }
+            },
+            "id": 530004
+          },
+          "league": {
+            "name": "English Premier League",
+            "abbreviation": "EPL"
+          },
+          "assisting_player": {
+            "name": {
+              "last": "Eriksen",
+              "display": "Christian Eriksen"
+            },
+            "uniform": "23",
+            "image": {
+              "base": "https://cdn-s3.si.com/s3fs-public/teams/soccer/epl/players/",
+              "cuts": {
+                "default": "537179-84x74.png",
+                "84x74": "537179-84x74.png",
+                "300x300": "537179-300x300.png"
+              }
+            },
+            "id": 537179
+          },
+          "short_text": "Harry Kane (Tottenham Hotspur) 89'"
+        }
+      ]
+    }
+  ],
+  "box_scores": [
+    {
+      "team_id": 6154,
+      "team_stats": {
+        "minutes_played": 90,
+        "goals": 1,
+        "own_goals": 0,
+        "assists": 1,
+        "shots": {
+          "total": 14,
+          "inside_box": 10,
+          "outside_box": 4,
+          "blocked": 3,
+          "shot_result": [
+            {
+              "shot_result_id": 2,
+              "name": "Top/Center",
+              "shots": 1,
+              "goals": 1
+            },
+            {
+              "shot_result_id": 5,
+              "name": "Bottom/Center",
+              "shots": 1,
+              "goals": 0
+            },
+            {
+              "shot_result_id": 6,
+              "name": "Bottom/Right",
+              "shots": 1,
+              "goals": 0
+            },
+            {
+              "shot_result_id": 8,
+              "name": "Out Above Left",
+              "shots": 1,
+              "goals": 0
+            },
+            {
+              "shot_result_id": 9,
+              "name": "Out Above Center",
+              "shots": 1,
+              "goals": 0
+            },
+            {
+              "shot_result_id": 23,
+              "name": "Blocked",
+              "shots": 2,
+              "goals": 0
+            },
+            {
+              "shot_result_id": 24,
+              "name": "Out Wide Low Left",
+              "shots": 1,
+              "goals": 0
+            },
+            {
+              "shot_result_id": 42,
+              "name": "Save Attempt",
+              "shots": 1,
+              "goals": 0
+            },
+            {
+              "shot_result_id": 43,
+              "name": "Middle/Left",
+              "shots": 1,
+              "goals": 0
+            },
+            {
+              "shot_result_id": 51,
+              "name": "Off Target",
+              "shots": 4,
+              "goals": 0
+            }
+          ]
+        },
+        "shots_on_goal": 4,
+        "shots_on_goal_percentage": ".286",
+        "saves": 3,
+        "crosses": 37,
+        "cross_breakdown": {
+          "successful": 0,
+          "blocked": 7,
+          "percentage": ".000"
+        },
+        "penalty_kicks": {
+          "shots": 0,
+          "goals": 0
+        },
+        "fouls_committed": 5,
+        "fouls_suffered": 12,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "offsides": 1,
+        "corner_kicks": 13,
+        "clears": 29,
+        "free_kick": 12,
+        "throw_ins": 32,
+        "wood_work": 0,
+        "touches": {
+          "total": 1874,
+          "passes": 602,
+          "passes_attempted": 739,
+          "passes_received": 602,
+          "passes_missed": 137,
+          "pass_completion_percentage": ".815",
+          "interceptions": 8,
+          "blocks": 12,
+          "pass_length": {
+            "short": 122,
+            "long": 471
+          },
+          "pass_direction": {
+            "forward": 289,
+            "forward_percentage": ".573",
+            "backward": 215,
+            "right": 276,
+            "left": 253
+          },
+          "pass_location": {
+            "own_half": {
+              "total": 242,
+              "attempted": 274,
+              "percentage": ".883"
+            },
+            "opponent_half": {
+              "total": 355,
+              "attempted": 452,
+              "percentage": ".785"
+            }
+          }
+        },
+        "catches": 8,
+        "punches": 0,
+        "tackles": 13,
+        "attacks": {
+          "left": 25,
+          "center": 14,
+          "right": 34,
+          "longball": 0
+        },
+        "aerial_duels": {
+          "total": 32,
+          "won": 12,
+          "percentage": ".375"
+        },
+        "ground_duels": {
+          "total": 23,
+          "won": 9,
+          "percentage": ".391"
+        },
+        "possession_percentage": "74",
+        "possession_percentage_breakdown": {
+          "field_half": {
+            "own": "40",
+            "opponent": "60"
+          },
+          "field_third": {
+            "own": "16",
+            "middle": "57",
+            "opponent": "27"
+          },
+          "attacking_side": {
+            "left": "34",
+            "center": "29",
+            "right": "37"
+          }
+        }
+      },
+      "goaltenders": [
+        {
+          "player": {
+            "player_id": 347765,
+            "shirt_name": "Lloris",
+            "display_name": "Hugo Lloris",
+            "uniform": "1"
+          },
+          "shots_on_goal_faced": 3,
+          "position": {
+            "position_id": 1,
+            "name": "Goalkeeper",
+            "abbreviation": "GK"
+          },
+          "is_game_started": true,
+          "is_winning_goaltender": true,
+          "is_losing_goaltender": false,
+          "is_tying_goaltender": false,
+          "is_on_pitch": true,
+          "cumulative_record": {
+            "wins": 15,
+            "losses": 5,
+            "ties": 6
+          },
+          "shots_faced": 5,
+          "goals_allowed": 0,
+          "saves": 3,
+          "penalty_kicks": {
+            "shots_faced": 0,
+            "goals_allowed": 0,
+            "saves": 0
+          },
+          "is_shutout": true,
+          "catches": 5,
+          "punches": 0,
+          "crosses_against": {
+            "total": 14,
+            "claimed": 2
+          }
+        }
+      ],
+      "players": [
+        {
+          "player": {
+            "player_id": 347765,
+            "shirt_name": "Lloris",
+            "display_name": "Hugo Lloris",
+            "uniform": "1"
+          },
+          "position": {
+            "position_id": 1,
+            "name": "Goalkeeper",
+            "abbreviation": "GK"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 0,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": null
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "ground_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 1,
+          "goal_mouth_blocks": 0,
+          "formation": 1,
+          "touches": {
+            "total": 36,
+            "passes": 19,
+            "completed_passes": 19,
+            "passes_received": 9,
+            "completion_percentage": "1.000",
+            "interceptions": 0,
+            "blocks": 0
+          },
+          "pass_length": {
+            "short": 0,
+            "long": 19
+          },
+          "possession_advanced": 46,
+          "tackles": 0,
+          "average_position": "VN7"
+        },
+        {
+          "player": {
+            "player_id": 536032,
+            "shirt_name": "Aurier",
+            "display_name": "Serge Aurier",
+            "uniform": "24"
+          },
+          "position": {
+            "position_id": 4,
+            "name": "Defender",
+            "abbreviation": "D"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 1,
+          "shots_on_goal": 1,
+          "crosses": 8,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": ".000"
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 1,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 4,
+            "won": 1,
+            "percentage": ".250"
+          },
+          "ground_duels": {
+            "total": 1,
+            "won": 1,
+            "percentage": "1.000"
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 1,
+          "goal_mouth_blocks": 0,
+          "formation": 2,
+          "touches": {
+            "total": 170,
+            "passes": 83,
+            "completed_passes": 63,
+            "passes_received": 58,
+            "completion_percentage": ".759",
+            "interceptions": 0,
+            "blocks": 2
+          },
+          "pass_length": {
+            "short": 18,
+            "long": 45
+          },
+          "possession_advanced": 187,
+          "tackles": 1,
+          "average_position": "HC21"
+        },
+        {
+          "player": {
+            "player_id": 796984,
+            "shirt_name": "Sanchez",
+            "display_name": "Davinson Sanchez",
+            "uniform": "6"
+          },
+          "position": {
+            "position_id": 4,
+            "name": "Defender",
+            "abbreviation": "D"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 0,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": null
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 1,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 8,
+            "won": 4,
+            "percentage": ".500"
+          },
+          "ground_duels": {
+            "total": 1,
+            "won": 1,
+            "percentage": "1.000"
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 9,
+          "goal_mouth_blocks": 0,
+          "formation": 3,
+          "touches": {
+            "total": 172,
+            "passes": 79,
+            "completed_passes": 71,
+            "passes_received": 66,
+            "completion_percentage": ".899",
+            "interceptions": 0,
+            "blocks": 1
+          },
+          "pass_length": {
+            "short": 8,
+            "long": 63
+          },
+          "possession_advanced": -165,
+          "tackles": 1,
+          "average_position": "VR21"
+        },
+        {
+          "player": {
+            "player_id": 586139,
+            "shirt_name": "Dier",
+            "display_name": "Eric Dier",
+            "uniform": "15"
+          },
+          "position": {
+            "position_id": 3,
+            "name": "Midfielder",
+            "abbreviation": "M"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 0,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": null
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 6,
+            "won": 4,
+            "percentage": ".667"
+          },
+          "ground_duels": {
+            "total": 4,
+            "won": 2,
+            "percentage": ".500"
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 9,
+          "goal_mouth_blocks": 0,
+          "formation": 4,
+          "touches": {
+            "total": 227,
+            "passes": 91,
+            "completed_passes": 82,
+            "passes_received": 69,
+            "completion_percentage": ".901",
+            "interceptions": 1,
+            "blocks": 2
+          },
+          "pass_length": {
+            "short": 15,
+            "long": 67
+          },
+          "possession_advanced": -36,
+          "tackles": 3,
+          "average_position": "VK22"
+        },
+        {
+          "player": {
+            "player_id": 638180,
+            "shirt_name": "Davies",
+            "display_name": "Ben Davies",
+            "uniform": "33"
+          },
+          "position": {
+            "position_id": 4,
+            "name": "Defender",
+            "abbreviation": "D"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 1,
+          "shots_on_goal": 1,
+          "crosses": 6,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": ".000"
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 3,
+            "won": 0,
+            "percentage": ".000"
+          },
+          "ground_duels": {
+            "total": 1,
+            "won": 1,
+            "percentage": "1.000"
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 3,
+          "goal_mouth_blocks": 0,
+          "formation": 5,
+          "touches": {
+            "total": 166,
+            "passes": 79,
+            "completed_passes": 65,
+            "passes_received": 59,
+            "completion_percentage": ".823",
+            "interceptions": 0,
+            "blocks": 0
+          },
+          "pass_length": {
+            "short": 15,
+            "long": 49
+          },
+          "possession_advanced": 85,
+          "tackles": 0,
+          "average_position": "HW22"
+        },
+        {
+          "player": {
+            "player_id": 466709,
+            "shirt_name": "Wanyama",
+            "display_name": "Victor Wanyama",
+            "uniform": "12"
+          },
+          "position": {
+            "position_id": 3,
+            "name": "Midfielder",
+            "abbreviation": "M"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 1,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": ".000"
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 2,
+          "fouls_suffered": 2,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 5,
+            "won": 0,
+            "percentage": ".000"
+          },
+          "ground_duels": {
+            "total": 1,
+            "won": 0,
+            "percentage": ".000"
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 3,
+          "goal_mouth_blocks": 0,
+          "formation": 6,
+          "touches": {
+            "total": 203,
+            "passes": 78,
+            "completed_passes": 69,
+            "passes_received": 69,
+            "completion_percentage": ".885",
+            "interceptions": 2,
+            "blocks": 1
+          },
+          "pass_length": {
+            "short": 8,
+            "long": 61
+          },
+          "possession_advanced": 45,
+          "tackles": 0,
+          "average_position": "HL25"
+        },
+        {
+          "player": {
+            "player_id": 348248,
+            "shirt_name": "Dembele",
+            "display_name": "Mousa Dembele",
+            "uniform": "19"
+          },
+          "position": {
+            "position_id": 3,
+            "name": "Midfielder",
+            "abbreviation": "M"
+          },
+          "is_game_started": true,
+          "minutes_played": 80,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 0,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": null
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 2,
+          "fouls_suffered": 3,
+          "yellow_cards": 1,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 2,
+            "won": 0,
+            "percentage": ".000"
+          },
+          "ground_duels": {
+            "total": 2,
+            "won": 1,
+            "percentage": ".500"
+          },
+          "is_on_pitch": false,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 1,
+          "goal_mouth_blocks": 0,
+          "formation": 7,
+          "touches": {
+            "total": 243,
+            "passes": 79,
+            "completed_passes": 70,
+            "passes_received": 67,
+            "completion_percentage": ".886",
+            "interceptions": 0,
+            "blocks": 0
+          },
+          "pass_length": {
+            "short": 16,
+            "long": 54
+          },
+          "possession_advanced": 75,
+          "tackles": 3,
+          "average_position": "HO25"
+        },
+        {
+          "player": {
+            "player_id": 537179,
+            "shirt_name": "Eriksen",
+            "display_name": "Christian Eriksen",
+            "uniform": "23"
+          },
+          "position": {
+            "position_id": 3,
+            "name": "Midfielder",
+            "abbreviation": "M"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 1,
+          "key_passes": 2,
+          "chances_created": 3,
+          "shots": 5,
+          "shots_on_goal": 0,
+          "crosses": 14,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": ".000"
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 2,
+            "won": 1,
+            "percentage": ".500"
+          },
+          "ground_duels": {
+            "total": 2,
+            "won": 0,
+            "percentage": ".000"
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 11,
+          "clears": 0,
+          "goal_mouth_blocks": 0,
+          "formation": 8,
+          "touches": {
+            "total": 223,
+            "passes": 93,
+            "completed_passes": 68,
+            "passes_received": 74,
+            "completion_percentage": ".731",
+            "interceptions": 2,
+            "blocks": 4
+          },
+          "pass_length": {
+            "short": 8,
+            "long": 54
+          },
+          "possession_advanced": 34,
+          "tackles": 1,
+          "average_position": "HL21"
+        },
+        {
+          "player": {
+            "player_id": 634424,
+            "shirt_name": "Alli",
+            "display_name": "Dele Alli",
+            "uniform": "20"
+          },
+          "position": {
+            "position_id": 3,
+            "name": "Midfielder",
+            "abbreviation": "M"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 2,
+          "chances_created": 2,
+          "shots": 1,
+          "shots_on_goal": 0,
+          "crosses": 1,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": ".000"
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 2,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "ground_duels": {
+            "total": 7,
+            "won": 1,
+            "percentage": ".143"
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 2,
+          "goal_mouth_blocks": 0,
+          "formation": 9,
+          "touches": {
+            "total": 126,
+            "passes": 41,
+            "completed_passes": 30,
+            "passes_received": 39,
+            "completion_percentage": ".732",
+            "interceptions": 3,
+            "blocks": 1
+          },
+          "pass_length": {
+            "short": 13,
+            "long": 16
+          },
+          "possession_advanced": 132,
+          "tackles": 4,
+          "average_position": "HR19"
+        },
+        {
+          "player": {
+            "player_id": 500944,
+            "shirt_name": "Lamela",
+            "display_name": "Erik Lamela",
+            "uniform": "11"
+          },
+          "position": {
+            "position_id": 3,
+            "name": "Midfielder",
+            "abbreviation": "M"
+          },
+          "is_game_started": true,
+          "minutes_played": 66,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 1,
+          "chances_created": 1,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 6,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": ".000"
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 1,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 1,
+            "won": 1,
+            "percentage": "1.000"
+          },
+          "ground_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "is_on_pitch": false,
+          "offsides": 0,
+          "corner_kicks": 2,
+          "clears": 0,
+          "goal_mouth_blocks": 0,
+          "formation": 10,
+          "touches": {
+            "total": 139,
+            "passes": 50,
+            "completed_passes": 33,
+            "passes_received": 47,
+            "completion_percentage": ".660",
+            "interceptions": 0,
+            "blocks": 0
+          },
+          "pass_length": {
+            "short": 9,
+            "long": 23
+          },
+          "possession_advanced": 149,
+          "tackles": 0,
+          "average_position": "HH19"
+        },
+        {
+          "player": {
+            "player_id": 530004,
+            "shirt_name": "Kane",
+            "display_name": "Harry Kane",
+            "uniform": "10"
+          },
+          "position": {
+            "position_id": 2,
+            "name": "Forward",
+            "abbreviation": "F"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 1,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 6,
+          "shots_on_goal": 2,
+          "crosses": 0,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": null
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 1,
+            "won": 1,
+            "percentage": "1.000"
+          },
+          "ground_duels": {
+            "total": 3,
+            "won": 2,
+            "percentage": ".667"
+          },
+          "is_on_pitch": true,
+          "offsides": 1,
+          "corner_kicks": 0,
+          "clears": 0,
+          "goal_mouth_blocks": 0,
+          "formation": 11,
+          "touches": {
+            "total": 70,
+            "passes": 22,
+            "completed_passes": 14,
+            "passes_received": 21,
+            "completion_percentage": ".636",
+            "interceptions": 0,
+            "blocks": 0
+          },
+          "pass_length": {
+            "short": 6,
+            "long": 8
+          },
+          "possession_advanced": 110,
+          "tackles": 0,
+          "average_position": "HM13"
+        },
+        {
+          "player": {
+            "player_id": 568442,
+            "shirt_name": "Son",
+            "display_name": "Son Heung-Min",
+            "uniform": "7"
+          },
+          "position": {
+            "position_id": 2,
+            "name": "Forward",
+            "abbreviation": "F"
+          },
+          "is_game_started": false,
+          "minutes_played": 10,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 1,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": ".000"
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "ground_duels": {
+            "total": 1,
+            "won": 0,
+            "percentage": ".000"
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 0,
+          "goal_mouth_blocks": 0,
+          "formation": 16,
+          "touches": {
+            "total": 39,
+            "passes": 9,
+            "completed_passes": 8,
+            "passes_received": 7,
+            "completion_percentage": ".889",
+            "interceptions": 0,
+            "blocks": 0
+          },
+          "pass_length": {
+            "short": 3,
+            "long": 5
+          },
+          "possession_advanced": 17,
+          "tackles": 0,
+          "average_position": "HU21"
+        },
+        {
+          "player": {
+            "player_id": 592561,
+            "shirt_name": "Lucas Moura",
+            "display_name": "Lucas Moura",
+            "uniform": "27"
+          },
+          "position": {
+            "position_id": 3,
+            "name": "Midfielder",
+            "abbreviation": "M"
+          },
+          "is_game_started": false,
+          "minutes_played": 24,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 0,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": null
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 1,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "ground_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 0,
+          "goal_mouth_blocks": 0,
+          "formation": 18,
+          "touches": {
+            "total": 60,
+            "passes": 16,
+            "completed_passes": 10,
+            "passes_received": 17,
+            "completion_percentage": ".625",
+            "interceptions": 0,
+            "blocks": 1
+          },
+          "pass_length": {
+            "short": 3,
+            "long": 7
+          },
+          "possession_advanced": 40,
+          "tackles": 0,
+          "average_position": "HH17"
+        }
+      ],
+      "bench_players": [
+        {
+          "player": {
+            "player_id": 348335,
+            "shirt_name": "Vorm",
+            "display_name": "Michel Vorm",
+            "uniform": "13"
+          },
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "player": {
+            "player_id": 397904,
+            "shirt_name": "Sissoko",
+            "display_name": "Moussa Sissoko",
+            "uniform": "17"
+          },
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "player": {
+            "player_id": 400427,
+            "shirt_name": "Rose",
+            "display_name": "Danny Rose",
+            "uniform": "3"
+          },
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "player": {
+            "player_id": 536419,
+            "shirt_name": "Trippier",
+            "display_name": "Kieran Trippier",
+            "uniform": "2"
+          },
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "player": {
+            "player_id": 975416,
+            "shirt_name": "Foyth",
+            "display_name": "Juan Foyth",
+            "uniform": "21"
+          },
+          "yellow_cards": 0,
+          "red_cards": 0
+        }
+      ],
+      "cards": [
+        {
+          "time": "45:02",
+          "minutes": 45,
+          "color": "yellow",
+          "player": {
+            "playerId": 348248,
+            "shirtName": "Dembele",
+            "displayName": "Mousa Dembele",
+            "uniform": "19"
+          },
+          "reason": {
+            "bookingReasonId": 27,
+            "name": "Tactical Foul"
+          }
+        }
+      ]
+    },
+    {
+      "team_id": 7131,
+      "team_stats": {
+        "minutes_played": 90,
+        "goals": 0,
+        "own_goals": 0,
+        "assists": 0,
+        "shots": {
+          "total": 5,
+          "inside_box": 4,
+          "outside_box": 1,
+          "blocked": 1,
+          "shot_result": [
+            {
+              "shot_result_id": 6,
+              "name": "Bottom/Right",
+              "shots": 1,
+              "goals": 0
+            },
+            {
+              "shot_result_id": 23,
+              "name": "Blocked",
+              "shots": 1,
+              "goals": 0
+            },
+            {
+              "shot_result_id": 25,
+              "name": "Out Wide High Left",
+              "shots": 1,
+              "goals": 0
+            },
+            {
+              "shot_result_id": 44,
+              "name": "Middle/Center",
+              "shots": 1,
+              "goals": 0
+            },
+            {
+              "shot_result_id": 45,
+              "name": "Middle/Right",
+              "shots": 1,
+              "goals": 0
+            }
+          ]
+        },
+        "shots_on_goal": 3,
+        "shots_on_goal_percentage": ".600",
+        "saves": 3,
+        "crosses": 14,
+        "cross_breakdown": {
+          "successful": 0,
+          "blocked": 1,
+          "percentage": ".000"
+        },
+        "penalty_kicks": {
+          "shots": 0,
+          "goals": 0
+        },
+        "fouls_committed": 12,
+        "fouls_suffered": 5,
+        "yellow_cards": 0,
+        "red_cards": 0,
+        "offsides": 0,
+        "corner_kicks": 3,
+        "clears": 82,
+        "free_kick": 6,
+        "throw_ins": 30,
+        "wood_work": 0,
+        "touches": {
+          "total": 655,
+          "passes": 137,
+          "passes_attempted": 249,
+          "passes_received": 137,
+          "passes_missed": 112,
+          "pass_completion_percentage": ".550",
+          "interceptions": 17,
+          "blocks": 22,
+          "pass_length": {
+            "short": 28,
+            "long": 103
+          },
+          "pass_direction": {
+            "forward": 73,
+            "forward_percentage": ".682",
+            "backward": 34,
+            "right": 56,
+            "left": 42
+          },
+          "pass_location": {
+            "own_half": {
+              "total": 93,
+              "attempted": 151,
+              "percentage": ".616"
+            },
+            "opponent_half": {
+              "total": 42,
+              "attempted": 95,
+              "percentage": ".442"
+            }
+          }
+        },
+        "catches": 1,
+        "punches": 0,
+        "tackles": 29,
+        "attacks": {
+          "left": 14,
+          "center": 4,
+          "right": 11,
+          "longball": 0
+        },
+        "aerial_duels": {
+          "total": 32,
+          "won": 20,
+          "percentage": ".625"
+        },
+        "ground_duels": {
+          "total": 23,
+          "won": 14,
+          "percentage": ".609"
+        },
+        "possession_percentage": "26",
+        "possession_percentage_breakdown": {
+          "field_half": {
+            "own": "61",
+            "opponent": "39"
+          },
+          "field_third": {
+            "own": "41",
+            "middle": "39",
+            "opponent": "20"
+          },
+          "attacking_side": {
+            "left": "47",
+            "center": "26",
+            "right": "27"
+          }
+        }
+      },
+      "goaltenders": [
+        {
+          "player": {
+            "player_id": 408145,
+            "shirt_name": "Hennessey",
+            "display_name": "Wayne Hennessey",
+            "uniform": "13"
+          },
+          "shots_on_goal_faced": 4,
+          "position": {
+            "position_id": 1,
+            "name": "Goalkeeper",
+            "abbreviation": "GK"
+          },
+          "is_game_started": true,
+          "is_winning_goaltender": false,
+          "is_losing_goaltender": true,
+          "is_tying_goaltender": false,
+          "is_on_pitch": true,
+          "cumulative_record": {
+            "wins": 3,
+            "losses": 10,
+            "ties": 4
+          },
+          "shots_faced": 14,
+          "goals_allowed": 1,
+          "saves": 3,
+          "penalty_kicks": {
+            "shots_faced": 0,
+            "goals_allowed": 0,
+            "saves": 0
+          },
+          "is_shutout": false,
+          "catches": 5,
+          "punches": 0,
+          "crosses_against": {
+            "total": 37,
+            "claimed": 1
+          }
+        }
+      ],
+      "players": [
+        {
+          "player": {
+            "player_id": 408145,
+            "shirt_name": "Hennessey",
+            "display_name": "Wayne Hennessey",
+            "uniform": "13"
+          },
+          "position": {
+            "position_id": 1,
+            "name": "Goalkeeper",
+            "abbreviation": "GK"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 0,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": null
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "ground_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 4,
+          "goal_mouth_blocks": 0,
+          "formation": 1,
+          "touches": {
+            "total": 46,
+            "passes": 9,
+            "completed_passes": 4,
+            "passes_received": 4,
+            "completion_percentage": ".444",
+            "interceptions": 0,
+            "blocks": 0
+          },
+          "pass_length": {
+            "short": 0,
+            "long": 4
+          },
+          "possession_advanced": 49,
+          "tackles": 0,
+          "average_position": "HM6"
+        },
+        {
+          "player": {
+            "player_id": 968294,
+            "shirt_name": "Wan-Bissaka",
+            "display_name": "Aaron Wan-Bissaka",
+            "uniform": "29"
+          },
+          "position": {
+            "position_id": 2,
+            "name": "Forward",
+            "abbreviation": "F"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 1,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": ".000"
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 1,
+            "won": 1,
+            "percentage": "1.000"
+          },
+          "ground_duels": {
+            "total": 1,
+            "won": 1,
+            "percentage": "1.000"
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 13,
+          "goal_mouth_blocks": 0,
+          "formation": 2,
+          "touches": {
+            "total": 61,
+            "passes": 25,
+            "completed_passes": 12,
+            "passes_received": 9,
+            "completion_percentage": ".480",
+            "interceptions": 2,
+            "blocks": 7
+          },
+          "pass_length": {
+            "short": 0,
+            "long": 12
+          },
+          "possession_advanced": 81,
+          "tackles": 4,
+          "average_position": "HV18"
+        },
+        {
+          "player": {
+            "player_id": 910341,
+            "shirt_name": "Fosu-Mensah",
+            "display_name": "Timothy Fosu-Mensah",
+            "uniform": "24"
+          },
+          "position": {
+            "position_id": 4,
+            "name": "Defender",
+            "abbreviation": "D"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 0,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": null
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 2,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "ground_duels": {
+            "total": 2,
+            "won": 2,
+            "percentage": "1.000"
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 12,
+          "goal_mouth_blocks": 0,
+          "formation": 3,
+          "touches": {
+            "total": 36,
+            "passes": 13,
+            "completed_passes": 10,
+            "passes_received": 6,
+            "completion_percentage": ".769",
+            "interceptions": 0,
+            "blocks": 0
+          },
+          "pass_length": {
+            "short": 2,
+            "long": 6
+          },
+          "possession_advanced": 19,
+          "tackles": 2,
+          "average_position": "HP13"
+        },
+        {
+          "player": {
+            "player_id": 436725,
+            "shirt_name": "Tomkins",
+            "display_name": "James Tomkins",
+            "uniform": "5"
+          },
+          "position": {
+            "position_id": 4,
+            "name": "Defender",
+            "abbreviation": "D"
+          },
+          "is_game_started": true,
+          "minutes_played": 85,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 1,
+          "shots_on_goal": 1,
+          "crosses": 0,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": null
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 2,
+            "won": 2,
+            "percentage": "1.000"
+          },
+          "ground_duels": {
+            "total": 1,
+            "won": 0,
+            "percentage": ".000"
+          },
+          "is_on_pitch": false,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 21,
+          "goal_mouth_blocks": 0,
+          "formation": 4,
+          "touches": {
+            "total": 41,
+            "passes": 12,
+            "completed_passes": 9,
+            "passes_received": 9,
+            "completion_percentage": ".750",
+            "interceptions": 1,
+            "blocks": 1
+          },
+          "pass_length": {
+            "short": 3,
+            "long": 6
+          },
+          "possession_advanced": -21,
+          "tackles": 3,
+          "average_position": "HI14"
+        },
+        {
+          "player": {
+            "player_id": 511678,
+            "shirt_name": "Van Aanholt",
+            "display_name": "Patrick Van Aanholt",
+            "uniform": "3"
+          },
+          "position": {
+            "position_id": 4,
+            "name": "Defender",
+            "abbreviation": "D"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 1,
+          "shots_on_goal": 0,
+          "crosses": 3,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": ".000"
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 1,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "ground_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 10,
+          "goal_mouth_blocks": 0,
+          "formation": 5,
+          "touches": {
+            "total": 89,
+            "passes": 39,
+            "completed_passes": 23,
+            "passes_received": 15,
+            "completion_percentage": ".590",
+            "interceptions": 3,
+            "blocks": 2
+          },
+          "pass_length": {
+            "short": 3,
+            "long": 20
+          },
+          "possession_advanced": 27,
+          "tackles": 1,
+          "average_position": "HD22"
+        },
+        {
+          "player": {
+            "player_id": 795958,
+            "shirt_name": "Riedewald",
+            "display_name": "Jairo Riedewald",
+            "uniform": "44"
+          },
+          "position": {
+            "position_id": 4,
+            "name": "Defender",
+            "abbreviation": "D"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 0,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": null
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 2,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 3,
+            "won": 1,
+            "percentage": ".333"
+          },
+          "ground_duels": {
+            "total": 1,
+            "won": 0,
+            "percentage": ".000"
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 2,
+          "goal_mouth_blocks": 0,
+          "formation": 6,
+          "touches": {
+            "total": 42,
+            "passes": 19,
+            "completed_passes": 9,
+            "passes_received": 13,
+            "completion_percentage": ".474",
+            "interceptions": 1,
+            "blocks": 4
+          },
+          "pass_length": {
+            "short": 2,
+            "long": 6
+          },
+          "possession_advanced": 33,
+          "tackles": 4,
+          "average_position": "HI25"
+        },
+        {
+          "player": {
+            "player_id": 620764,
+            "shirt_name": "Milivojevic",
+            "display_name": "Luka Milivojevic",
+            "uniform": "4"
+          },
+          "position": {
+            "position_id": 3,
+            "name": "Midfielder",
+            "abbreviation": "M"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 1,
+          "chances_created": 1,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 4,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": ".000"
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 1,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 2,
+            "won": 1,
+            "percentage": ".500"
+          },
+          "ground_duels": {
+            "total": 6,
+            "won": 4,
+            "percentage": ".667"
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 3,
+          "clears": 6,
+          "goal_mouth_blocks": 0,
+          "formation": 7,
+          "touches": {
+            "total": 70,
+            "passes": 36,
+            "completed_passes": 23,
+            "passes_received": 17,
+            "completion_percentage": ".639",
+            "interceptions": 5,
+            "blocks": 1
+          },
+          "pass_length": {
+            "short": 1,
+            "long": 20
+          },
+          "possession_advanced": 81,
+          "tackles": 2,
+          "average_position": "HL20"
+        },
+        {
+          "player": {
+            "player_id": 441153,
+            "shirt_name": "McArthur",
+            "display_name": "James McArthur",
+            "uniform": "18"
+          },
+          "position": {
+            "position_id": 3,
+            "name": "Midfielder",
+            "abbreviation": "M"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 1,
+          "chances_created": 1,
+          "shots": 1,
+          "shots_on_goal": 0,
+          "crosses": 0,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": null
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 2,
+          "fouls_suffered": 1,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "ground_duels": {
+            "total": 2,
+            "won": 2,
+            "percentage": "1.000"
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 5,
+          "goal_mouth_blocks": 0,
+          "formation": 8,
+          "touches": {
+            "total": 55,
+            "passes": 19,
+            "completed_passes": 16,
+            "passes_received": 9,
+            "completion_percentage": ".842",
+            "interceptions": 3,
+            "blocks": 2
+          },
+          "pass_length": {
+            "short": 9,
+            "long": 6
+          },
+          "possession_advanced": 19,
+          "tackles": 6,
+          "average_position": "HP20"
+        },
+        {
+          "player": {
+            "player_id": 492731,
+            "shirt_name": "Townsend",
+            "display_name": "Andros Townsend",
+            "uniform": "10"
+          },
+          "position": {
+            "position_id": 3,
+            "name": "Midfielder",
+            "abbreviation": "M"
+          },
+          "is_game_started": true,
+          "minutes_played": 87,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 2,
+          "chances_created": 2,
+          "shots": 1,
+          "shots_on_goal": 1,
+          "crosses": 4,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": ".000"
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 2,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "ground_duels": {
+            "total": 1,
+            "won": 1,
+            "percentage": "1.000"
+          },
+          "is_on_pitch": false,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 3,
+          "goal_mouth_blocks": 0,
+          "formation": 9,
+          "touches": {
+            "total": 88,
+            "passes": 25,
+            "completed_passes": 12,
+            "passes_received": 18,
+            "completion_percentage": ".480",
+            "interceptions": 2,
+            "blocks": 2
+          },
+          "pass_length": {
+            "short": 2,
+            "long": 10
+          },
+          "possession_advanced": 116,
+          "tackles": 1,
+          "average_position": "VI23"
+        },
+        {
+          "player": {
+            "player_id": 436213,
+            "shirt_name": "Benteke",
+            "display_name": "Christian Benteke",
+            "uniform": "17"
+          },
+          "position": {
+            "position_id": 2,
+            "name": "Forward",
+            "abbreviation": "F"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 1,
+          "chances_created": 1,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 1,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": ".000"
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 4,
+          "fouls_suffered": 1,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 18,
+            "won": 10,
+            "percentage": ".556"
+          },
+          "ground_duels": {
+            "total": 5,
+            "won": 2,
+            "percentage": ".400"
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 4,
+          "goal_mouth_blocks": 0,
+          "formation": 10,
+          "touches": {
+            "total": 57,
+            "passes": 24,
+            "completed_passes": 11,
+            "passes_received": 18,
+            "completion_percentage": ".458",
+            "interceptions": 0,
+            "blocks": 0
+          },
+          "pass_length": {
+            "short": 5,
+            "long": 6
+          },
+          "possession_advanced": 133,
+          "tackles": 3,
+          "average_position": "VN26"
+        },
+        {
+          "player": {
+            "player_id": 906756,
+            "shirt_name": "Sorloth",
+            "display_name": "Alexander Sorloth",
+            "uniform": "9"
+          },
+          "position": {
+            "position_id": 2,
+            "name": "Forward",
+            "abbreviation": "F"
+          },
+          "is_game_started": true,
+          "minutes_played": 90,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 1,
+          "shots_on_goal": 1,
+          "crosses": 1,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": ".000"
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 1,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 4,
+            "won": 4,
+            "percentage": "1.000"
+          },
+          "ground_duels": {
+            "total": 4,
+            "won": 2,
+            "percentage": ".500"
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 1,
+          "goal_mouth_blocks": 0,
+          "formation": 11,
+          "touches": {
+            "total": 60,
+            "passes": 25,
+            "completed_passes": 8,
+            "passes_received": 17,
+            "completion_percentage": ".320",
+            "interceptions": 0,
+            "blocks": 2
+          },
+          "pass_length": {
+            "short": 1,
+            "long": 7
+          },
+          "possession_advanced": 153,
+          "tackles": 2,
+          "average_position": "VP25"
+        },
+        {
+          "player": {
+            "player_id": 362243,
+            "shirt_name": "Delaney",
+            "display_name": "Damien Delaney",
+            "uniform": "27"
+          },
+          "position": {
+            "position_id": 4,
+            "name": "Defender",
+            "abbreviation": "D"
+          },
+          "is_game_started": false,
+          "minutes_played": 5,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 0,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": null
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "ground_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 1,
+          "goal_mouth_blocks": 0,
+          "formation": 14,
+          "touches": {
+            "total": 5,
+            "passes": 1,
+            "completed_passes": 0,
+            "passes_received": 2,
+            "completion_percentage": ".000",
+            "interceptions": 0,
+            "blocks": 1
+          },
+          "pass_length": {
+            "short": 0,
+            "long": 0
+          },
+          "possession_advanced": -9,
+          "tackles": 0,
+          "average_position": "HI10"
+        },
+        {
+          "player": {
+            "player_id": 390094,
+            "shirt_name": "Lee",
+            "display_name": "Lee Chung-Young",
+            "uniform": "14"
+          },
+          "position": {
+            "position_id": 3,
+            "name": "Midfielder",
+            "abbreviation": "M"
+          },
+          "is_game_started": false,
+          "minutes_played": 3,
+          "goals": 0,
+          "own_goals": 0,
+          "assists": 0,
+          "key_passes": 0,
+          "chances_created": 0,
+          "shots": 0,
+          "shots_on_goal": 0,
+          "crosses": 0,
+          "cross_breakdown": {
+            "successful": 0,
+            "percentage": null
+          },
+          "penalty_kicks": {
+            "shots": 0,
+            "goals": 0,
+            "won": 0
+          },
+          "fouls_committed": 0,
+          "fouls_suffered": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "aerial_duels": {
+            "total": 2,
+            "won": 1,
+            "percentage": ".500"
+          },
+          "ground_duels": {
+            "total": 0,
+            "won": 0,
+            "percentage": null
+          },
+          "is_on_pitch": true,
+          "offsides": 0,
+          "corner_kicks": 0,
+          "clears": 0,
+          "goal_mouth_blocks": 0,
+          "formation": 15,
+          "touches": {
+            "total": 5,
+            "passes": 2,
+            "completed_passes": 0,
+            "passes_received": 0,
+            "completion_percentage": ".000",
+            "interceptions": 0,
+            "blocks": 0
+          },
+          "pass_length": {
+            "short": 0,
+            "long": 0
+          },
+          "possession_advanced": 0,
+          "tackles": 1,
+          "average_position": "HH25"
+        }
+      ],
+      "bench_players": [
+        {
+          "player": {
+            "player_id": 736562,
+            "shirt_name": "Rakip",
+            "display_name": "Erdal Rakip",
+            "uniform": "31"
+          },
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "player": {
+            "player_id": 855928,
+            "shirt_name": "Henry",
+            "display_name": "Dion Henry",
+            "uniform": "30"
+          },
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "player": {
+            "player_id": 896055,
+            "shirt_name": "Lokilo",
+            "display_name": "Jason Lokilo",
+            "uniform": "28"
+          },
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "player": {
+            "player_id": 987477,
+            "shirt_name": "Kirby",
+            "display_name": "Nya Kirby",
+            "uniform": "36"
+          },
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "player": {
+            "player_id": 518485,
+            "shirt_name": "Souare",
+            "display_name": "Pape Souare",
+            "uniform": "23"
+          },
+          "yellow_cards": 0,
+          "red_cards": 0
+        }
+      ]
+    }
+  ],
+  "links": [],
+  "editorial": {
+    "has_preview": true,
+    "has_recap": true,
+    "has_bullets": false,
+    "has_odds": true
+  }
+}
